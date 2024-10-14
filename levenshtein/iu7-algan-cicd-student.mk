@@ -8,6 +8,7 @@ $(READY_DIR)/stud-unit-test-report-prev.json: $(READY_DIR)
 
 $(READY_DIR)/main-cli-debug.py: $(READY_DIR)
 	cp -rf src/* $(READY_DIR)/
+	mv $(READY_DIR)/main.py $(READY_DIR)/main-cli-debug.py
 
 $(READY_DIR)/stud-unit-test-report.json: $(READY_DIR)
 	python3 ./unit.py --output=$(READY_DIR)/stud-unit-test-report.json
