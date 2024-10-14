@@ -1,62 +1,20 @@
-# Обязательно в реализации - цели НЕ менять, зависимости и сценарии получения поменять на необходимые в конкретном случае
+READY_DIR := ready
 
-# Рекомендуется проект выстраивать вокруг собственных сценариев сборки, сценарий интерфейса специально не носит название "makefile" - Вы можете отсюда обращаться к своим сценариям
-# Рекомендуется в этом файле оставить только свои вызовы "make build", "cmake .", "msBuild proj1.sln ./out" и операции копирования
+$(READY_DIR)/report.pdf: $(READY_DIR)
+	cp doc/report.pdf $(READY_DIR)/report.pdf
 
-# Положить на проверку ИЛИ собрать на сервере pdf отчёта
-# Допускается использование libreoffice, latex, xelatex
-ready/report.pdf: lab_3/doc/report.pdf
-	mkdir -p ./ready
-	cp lab_3/doc/report.pdf ready/report.pdf
+$(READY_DIR)/stud-unit-test-report-prev.json: $(READY_DIR)
+	cp test/stud-unit-test-report-prev.json $(READY_DIR)/stud-unit-test-report-prev.json
 
-# Положить на проверку уже загруженный в репозиторий отчёт о тестировании
-#
-# Пример содержимого:
-#
-# { 
-#     "timestamp": "2024-07-14T19:46:32+03:00",
-#     "coverage": 0.1,
-#     "passed": 1,
-#     "failed": 0
-# }
-#
-# "timestamp" - дататаймштамп в формате UTC с указанием зоны dtst=$(date +"%Y-%m-%dT%H:%M:%S%:z")
-# "coverage" - покрытие в процентах
-# "passed" - число пройденных модульных тестов при последнем тестировании
-# "failed" - число проваленных модульных тестов при последнем тестировании
-#
-# При невозможности/нежелании генерировать такой файл автоматически допускается ручное заполнение "на глаз" с одним тестом и минимальным покрытием
+$(READY_DIR)/main-cli-debug.py: $(READY_DIR)
+	cp -rf src/* $(READY_DIR)/
 
-ready/stud-unit-test-report-prev.json: code/stud-unit-test-report-prev.json
-	mkdir -p ./ready
-	cp code/stud-unit-test-report-prev.json ready/stud-unit-test-report-prev.json
+$(READY_DIR)/stud-unit-test-report.json: $(READY_DIR)
+	python3 ./unit.py --output=$(READY_DIR)/stud-unit-test-report.json
 
-# Положить на проверку программу из питоновских скриптов
-ready/main-cli-debug.py: lab_3/main-cli-debug.py
-	mkdir -p ./ready
-	cp lab_3/code/* ready/
+$(READY_DIR):
+	@mkdir -p ./ready
 
-# ИЛИ
-
-# Собрать приложение на компилируемом языке прямо на сервере
-ready/app-cli-debug:
-	mkdir -p ./ready
-	cd code
-	cmake
-
-# Очистка
 .PHONY: clean
 clean:
-	echo OK
-
-# --
-
-# Если хочется добавить в образ на сервере что-то,
-# можно обратиться к @alexodnodvorcev прямо в комментарии к MR.
-
-# --
-
-# Реализация по желанию - удалить цели, если нет реализации
-
-# Сборка и запуск модульных тестов прямо на сервере
-ready/stud-unit-test-report.json:
+	rm -f .coverage log.txt
