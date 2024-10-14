@@ -3,39 +3,45 @@ INSERT_COST = 1
 REPLACE_COST = 1
 TRANSPOSITION_COST = 1
 
+
 def createMatrix(rows: int, cols: int) -> list[list[int]]:
     return [[0 for _ in range(cols)] for _ in range(rows)]
 
+
 def RecursiveLevenshtein(s1: str, s2: str) -> int:
-    if len(s1) == 0 or len(s2) == 0:
-        return abs(len(s1) - len(s2))
+    length1, length2 = len(s1), len(s2)
+    if length1 == 0 or length2 == 0:
+        return abs(length1 - length2)
    
-    if s1[0] == s2[0]:
-        return RecursiveLevenshtein(s1[1:], s2[1:])
+    if s1[length1-1] == s2[length2-1]:
+        return RecursiveLevenshtein(s1[:length1-1], s2[:length2-1])
     
     return min(
-        RecursiveLevenshtein(s1, s2[1:]) + INSERT_COST,
-        RecursiveLevenshtein(s1[1:], s2) + DELETE_COST,
-        RecursiveLevenshtein(s1[1:], s2[1:]) + REPLACE_COST
+        RecursiveLevenshtein(s1, s2[:length2-1]) + INSERT_COST,
+        RecursiveLevenshtein(s1[:length1-1], s2) + DELETE_COST,
+        RecursiveLevenshtein(s1[:length1-1], s2[:length2-1]) + REPLACE_COST
     )
+
 
 def RecursiveCacheLevenshtein(s1: str, s2: str, memo: dict = None) -> int:
     if memo is None:
         memo = {}
 
-    key = (len(s1), len(s2))
+    length1, length2 = len(s1), len(s2)
+
+    key = (length1, length2)
     if key in memo:
         return memo[key]
 
-    if len(s1) == 0 or len(s2) == 0:
-        return abs(len(s1) - len(s2))
-    if s1[0] == s2[0]:
-        return RecursiveCacheLevenshtein(s1[1:], s2[1:])
+    if length1 == 0 or length2 == 0:
+        return abs(length1 - length2)
+    if s1[length1-1] == s2[length2-1]:
+        return RecursiveCacheLevenshtein(s1[:length1-1], s2[:length2-1])
 
     distance = min(
-        RecursiveCacheLevenshtein(s1, s2[1:], memo) + INSERT_COST,
-        RecursiveCacheLevenshtein(s1[1:], s2, memo) + DELETE_COST,
-        RecursiveCacheLevenshtein(s1[1:], s2[1:], memo) + REPLACE_COST
+        RecursiveCacheLevenshtein(s1, s2[:length2-1], memo) + INSERT_COST,
+        RecursiveCacheLevenshtein(s1[:length1-1], s2, memo) + DELETE_COST,
+        RecursiveCacheLevenshtein(s1[:length1-1], s2[:length2-1], memo) + REPLACE_COST
     )
     memo[key] = distance
 
@@ -66,6 +72,7 @@ def DynamicLevenshtein(s1: str, s2: str) -> int:
             )
 
     return matrix[length1][length2]
+
 
 def DynamicDamerauLevenshtein(s1: str, s2: str) -> int:
     length1, length2 = len(s1), len(s2)
