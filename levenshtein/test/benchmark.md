@@ -1,6 +1,6 @@
 ### launch results on a board with 256kb RAM and 16kb stack
 
-| len | alorithm | time |
+| len | algorithm | time |
 |-----|----------|------|
 | 1 | Dynamic Damerau | time = 13.2 ms |                                                          
 | 1 | Recur Lev       | time = 13.5 ms |                                                            
