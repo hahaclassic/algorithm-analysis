@@ -23,7 +23,7 @@ def Start():
     inputMsg = "Enter the algorithm number or 0 to exit the program: "
     operation = Operation(int(input(inputMsg)))
 
-    algorithm: dict[Operation, typing.Callable[[int, int], int]] = {
+    algorithm: dict[Operation, typing.Callable[[str, str], int]] = {
         Operation.RECURSIVE_LEVENSHTEIN: lvnst.RecursiveLevenshtein,
         Operation.RECURSIVE_CACHE_LEVENSHTEIN: lvnst.RecursiveCacheLevenshtein,
         Operation.DYNAMIC_LEVENSHTEIN: lvnst.DynamicLevenshtein,
