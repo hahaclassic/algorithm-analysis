@@ -47,13 +47,14 @@ def RecursiveCacheLevenshtein(s1: str, s2: str, memo: dict = None) -> int:
     if length1 == 0 or length2 == 0:
         return abs(length1 - length2)
     if s1[-1] == s2[-1]:
-        return RecursiveCacheLevenshtein(s1[:-1], s2[:-1])
-
-    distance = min(
-        RecursiveCacheLevenshtein(s1, s2[:-1], memo) + INSERT_COST,
-        RecursiveCacheLevenshtein(s1[:-1], s2, memo) + DELETE_COST,
-        RecursiveCacheLevenshtein(s1[:-1], s2[:-1], memo) + REPLACE_COST
-    )
+        distance = RecursiveCacheLevenshtein(s1[:-1], s2[:-1])
+    else:
+        distance = min(
+            RecursiveCacheLevenshtein(s1, s2[:-1], memo) + INSERT_COST,
+            RecursiveCacheLevenshtein(s1[:-1], s2, memo) + DELETE_COST,
+            RecursiveCacheLevenshtein(s1[:-1], s2[:-1], memo) + REPLACE_COST
+        )
+        
     memo[key] = distance
 
     return distance 
