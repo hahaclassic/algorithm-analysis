@@ -65,7 +65,7 @@ def DynamicLevenshtein(s1: str, s2: str) -> int:
     if len(s1) == 0 or len(s2) == 0:
         return abs(length1 - length2)
     
-    matrix = getInitialMatrix(length1+1, length2+1)
+    matrix = getInitialMatrix(length1, length2)
 
     for i in range(1, length1 + 1):
         for j in range(1, length2 + 1): 
@@ -86,7 +86,7 @@ def DynamicDamerauLevenshtein(s1: str, s2: str) -> int:
     if len(s1) == 0 or len(s2) == 0:
         return abs(length1 - length2)
 
-    matrix = getInitialMatrix(length1+1, length2+1)
+    matrix = getInitialMatrix(length1, length2)
 
     for i in range(1, length1 + 1):
         for j in range(1, length2 + 1):
