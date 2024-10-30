@@ -8,6 +8,17 @@ def createMatrix(rows: int, cols: int) -> list[list[int]]:
     return [[0 for _ in range(cols)] for _ in range(rows)]
 
 
+def getInitialMatrix(rows: int, cols: int) -> list[list[int]]:
+    matrix = createMatrix(rows+1, cols+1)
+    for i in range(1, rows + 1):
+        matrix[i][0] = matrix[i - 1][0] + DELETE_COST
+
+    for j in range(1, cols + 1):
+        matrix[0][j] = matrix[0][j - 1] + INSERT_COST
+
+    return matrix
+
+
 def RecursiveLevenshtein(s1: str, s2: str) -> int:
     length1, length2 = len(s1), len(s2)
     if length1 == 0 or length2 == 0:
@@ -54,12 +65,7 @@ def DynamicLevenshtein(s1: str, s2: str) -> int:
     if len(s1) == 0 or len(s2) == 0:
         return abs(length1 - length2)
     
-    matrix = createMatrix(length1+1, length2+1)
-    for i in range(1, length1 + 1):
-        matrix[i][0] = matrix[i - 1][0] + DELETE_COST
-
-    for j in range(1, length2 + 1):
-        matrix[0][j] = matrix[0][j - 1] + INSERT_COST
+    matrix = getInitialMatrix(length1+1, length2+1)
 
     for i in range(1, length1 + 1):
         for j in range(1, length2 + 1): 
@@ -80,7 +86,7 @@ def DynamicDamerauLevenshtein(s1: str, s2: str) -> int:
     if len(s1) == 0 or len(s2) == 0:
         return abs(length1 - length2)
 
-    matrix = createMatrix(length1+1, length2+1)
+    matrix = getInitialMatrix(length1+1, length2+1)
 
     for i in range(1, length1 + 1):
         for j in range(1, length2 + 1):
