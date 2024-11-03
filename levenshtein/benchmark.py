@@ -1,20 +1,9 @@
 # NOTE: MicroPython
 
 import utime
-# import urandom
-# import string
+import urandom
 from src import levenshtein as lvnsht
 from micropython import const
-
-seed = 34123518
-
-def rand():
-    global seed
-    a = 1123423
-    c = 12341234151
-    m = 2**32
-    seed = (a * seed + c) % m
-    return seed
 
 MEASURES_PER_LEN = const(10)
 MIN_LEN = const(1)
@@ -27,9 +16,8 @@ DYNAMIC_DAMERAU = const("Dynamic Damerau")
 
 
 def randString(length: int) -> str:
-    # return ''.join(urandom.choice(string.ascii_lowercase) for _ in range(length))
     alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    return ''.join(alphabet[rand() % len(alphabet)] for _ in range(length))
+    return ''.join(urandom.choice(alphabet) for _ in range(length))
 
 
 def measureTime(func, s1: str, s2: str) -> int:
