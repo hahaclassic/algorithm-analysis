@@ -5,7 +5,7 @@ import urandom
 from src import levenshtein as lvnsht
 from micropython import const
 
-MEASURES_PER_LEN = const(10)
+MEASURES_PER_LEN = const(15)
 MIN_LEN = const(1)
 MAX_LEN = const(6)
 
