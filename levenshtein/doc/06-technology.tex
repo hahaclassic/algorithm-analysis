@@ -1,0 +1,176 @@
+\section{Технологическая часть}
+
+В данном разделе будет представлена реализация алгоритмов поиска редакционного расстояния. Также будут указаны средства реализации алгоритмов и результаты тестирования.
+
+\subsection{Средства реализации}
+
+Для реализации был выбран язык программирования MicroPython~\cite{python}. Выбор обсуловлен наличием функции вычисления процессорного времени в библиотеке utime~\cite{time}. Время было замерено с помощью функции time.ticks\_ms().
+
+\subsection{Реализация алгоритмов}
+
+В листинге \ref{lst:constants} представлено определение стоимости операций в виде глобальных переменных. Далее они будут использоваться в реализациях алгоритмов.
+ 
+\begin{listing}[H]
+\caption{Определение стоимости операций}
+\label{lst:constants}
+\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
+DELETE_COST = 1
+INSERT_COST = 1
+REPLACE_COST = 1
+TRANSPOSITION_COST = 1
+\end{minted}
+\end{listing}
+
+В листинге \ref{lst:matrix} представлены функции для создания матрицы и заполнения нулевого столбца и нулевой строки расстояниями, соответствующими преобразованиям из пустой первой строки \(S_1\) в подстроки \(S_2[1...i]\), где \(i = \overline{1,m}\), и наоборот. Данные функции будут использоваться в матричных реализациях алгоритмов поиска редакционного расстояния.
+ 
+\begin{listing}
+\caption{Определение функций для инициализации матрицы для матричных алгоритмов}
+\label{lst:matrix}
+\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
+def createMatrix(rows: int, cols: int) -> list[list[int]]:
+    return [[0 for _ in range(cols)] for _ in range(rows)]
+
+def getInitialMatrix(rows: int, cols: int) -> list[list[int]]:
+    matrix = createMatrix(rows+1, cols+1)
+    for i in range(1, rows + 1):
+        matrix[i][0] = matrix[i - 1][0] + DELETE_COST
+
+    for j in range(1, cols + 1):
+        matrix[0][j] = matrix[0][j - 1] + INSERT_COST
+
+    return matrix
+\end{minted}
+\end{listing}
+
+В листингах \ref{lst:recur_lev}~---~\ref{lst:dyn_dam_lev} представлены различные реализации алгоритмов нахождения редакционного расстояния Левенштейна и Дамерау~---~Левенштейна.
+
+\begin{listing}
+\caption{Реализация рекурсивного алгоритма поиска расстояния Левенштейна}
+\label{lst:recur_lev}
+\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
+def RecursiveLevenshtein(s1: str, s2: str) -> int:
+    length1, length2 = len(s1), len(s2)
+    if length1 == 0 or length2 == 0:
+        return abs(length1 - length2)
+   
+    if s1[-1] == s2[-1]:
+        return RecursiveLevenshtein(s1[:-1], s2[:-1])
+    
+    return min(
+        RecursiveLevenshtein(s1, s2[:-1]) + INSERT_COST,
+        RecursiveLevenshtein(s1[:-1], s2) + DELETE_COST,
+        RecursiveLevenshtein(s1[:-1], s2[:-1]) + REPLACE_COST)
+\end{minted}
+\end{listing}
+
+\begin{listing}
+\caption{Реализация рекурсивного алгоритма поиска расстояния Левенштейна c мемоизацией}
+\label{lst:recur_lev_cache}
+\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
+def RecursiveCacheLevenshtein(s1: str, s2: str, memo: dict = None) -> int:
+    if memo is None:
+        memo = {}
+
+    length1, length2 = len(s1), len(s2)
+    key = (length1, length2)
+    if key in memo:
+        return memo[key]
+
+    if length1 == 0 or length2 == 0:
+        return abs(length1 - length2)
+    if s1[-1] == s2[-1]:
+        distance = RecursiveCacheLevenshtein(s1[:-1], s2[:-1])
+    else:
+        distance = min(
+            RecursiveCacheLevenshtein(s1, s2[:-1], memo) + INSERT_COST,
+            RecursiveCacheLevenshtein(s1[:-1], s2, memo) + DELETE_COST,
+            RecursiveCacheLevenshtein(s1[:-1], s2[:-1], memo) \
+                + REPLACE_COST)
+    memo[key] = distance
+
+    return distance 
+\end{minted}
+\end{listing}
+
+\begin{listing}
+\caption{Реализация матричного алгоритма поиска расстояния Левенштейна}
+\label{lst:dyn_lev}
+\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
+def DynamicLevenshtein(s1: str, s2: str) -> int:
+    length1, length2 = len(s1), len(s2)
+    if length1 == 0 or length2 == 0:
+        return abs(length1 - length2)
+    
+    matrix = getInitialMatrix(length1, length2)
+
+    for i in range(1, length1 + 1):
+        for j in range(1, length2 + 1): 
+            cost = 0 if s1[i - 1] == s2[j - 1] else REPLACE_COST
+           
+            matrix[i][j] = min(
+                matrix[i - 1][j] + DELETE_COST, 
+                matrix[i][j - 1] + INSERT_COST,
+                matrix[i - 1][j - 1] + cost)
+
+    return matrix[length1][length2]
+\end{minted}
+\end{listing}
+
+\begin{listing}
+\caption{Реализация матричного алгоритма поиска расстояния Дамерау~---~Левенштейна}
+\label{lst:dyn_dam_lev}
+\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
+def DynamicDamerauLevenshtein(s1: str, s2: str) -> int:
+    length1, length2 = len(s1), len(s2)
+    if length1 == 0 or length2 == 0:
+        return abs(length1 - length2)
+
+    matrix = getInitialMatrix(length1, length2)
+
+    for i in range(1, length1 + 1):
+        for j in range(1, length2 + 1):
+            cost = 0 if s1[i - 1] == s2[j - 1] else REPLACE_COST
+
+            matrix[i][j] = min(
+                matrix[i - 1][j] + DELETE_COST,
+                matrix[i][j - 1] + INSERT_COST,
+                matrix[i - 1][j - 1] + cost)
+
+            if i > 1 and j > 1 and s1[i - 1] == s2[j - 2] \
+                and s1[i - 2] == s2[j - 1]:
+                matrix[i][j] = min(
+                    matrix[i][j], 
+                    matrix[i - 2][j - 2] + TRANSPOSITION_COST)
+
+    return matrix[length1][length2]
+\end{minted}
+\end{listing}
+
+\subsection{Тестирование}
+
+В таблице \ref{table:tests} представлены тесты для алгоритмов нахождения расстояний Левенштейна и Дамерау~---~Левенштейна. Тестирование проводилось по методологии чёрного ящика. Все тесты пройдены успешно.
+
+\begin{table}[htb]
+\caption{\centering Тесты для алгоритмов нахождения расстояний Левенштейна и Дамерау~---~Левенштейна}
+\small
+\centering\begin{tabular}{|c|c|c|c|c|}
+      \hline
+       &  &  & \multicolumn{2}{c|}{Ожидаемый результат} \\
+      \cline{4-5}
+      \raisebox{1.5ex}[0cm][0cm]{№} & \raisebox{1.5ex}[0cm][0cm]{$S_1$} & \raisebox{1.5ex}[0cm][0cm]{$S_2$} 
+      &  Левентшейн & Дамерау~---~Левенштейн \\ \hline
+      1 & $\varnothing$ & $\varnothing$ & 0 & 0 \\ \hline
+      2 & $\varnothing$ & hello & 5 & 5 \\ \hline
+      3 & $\varnothing$ & привет & 6 & 6 \\ \hline
+      4 & beauty & $\varnothing$ & 6 & 6 \\ \hline
+      5 & невероятно & $\varnothing$ & 10 & 10 \\ \hline
+      6 & abc & aba & 1 & 1 \\ \hline
+      7 & кошка & мышка & 2 & 2 \\ \hline
+      8 & aba & aab & 2 & 1 \\ \hline
+      9 & котик & котки & 2 & 1 \\ \hline
+      10 & abaa & aba & 2 & 1 \\ \hline
+      11 & котт & кот & 2 & 2 \\ \hline
+      13 & Hello world & eHllo kord & 4 & 3 \\ \hline
+    \end{tabular}
+\label{table:tests}
+\end{table}
