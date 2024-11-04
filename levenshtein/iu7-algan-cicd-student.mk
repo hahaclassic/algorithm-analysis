@@ -1,7 +1,7 @@
 READY_DIR := ready
 
 $(READY_DIR)/report.pdf: $(READY_DIR)
-	cp doc/report.pdf $(READY_DIR)/report.pdf
+	cp report/report.pdf $(READY_DIR)/report.pdf
 
 $(READY_DIR)/stud-unit-test-report-prev.json: $(READY_DIR)
 	cp test/stud-unit-test-report-prev.json $(READY_DIR)/stud-unit-test-report-prev.json
