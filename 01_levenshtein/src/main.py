@@ -9,6 +9,7 @@ class Operation(Enum):
     DYNAMIC_DAMERAU_LEVENSHTEIN = 4
     EXIT = 0
 
+
 def Menu():
     print("----------------------------------")
     print("1. Recursive Levenshtein")
@@ -18,10 +19,23 @@ def Menu():
     print("0. Exit")
     print("----------------------------------")
 
-def Start():
+
+def getOperation() -> Operation:
     Menu()
     inputMsg = "Enter the algorithm number or 0 to exit the program: "
-    operation = Operation(int(input(inputMsg)))
+    operation = None
+
+    while operation is None:
+        try:
+            operation = Operation(int(input(inputMsg)))
+        except ValueError:
+            print("\nInvalid data. Enter number from 0 to 4.")
+
+    return operation
+
+
+def Start():
+    operation = getOperation()
 
     algorithm: dict[Operation, typing.Callable[[str, str], int]] = {
         Operation.RECURSIVE_LEVENSHTEIN: lvnst.RecursiveLevenshtein,
@@ -31,19 +45,12 @@ def Start():
     }
 
     while operation != Operation.EXIT:
-        if Operation.RECURSIVE_LEVENSHTEIN.value <= operation.value \
-            <= Operation.DYNAMIC_DAMERAU_LEVENSHTEIN.value:
-        
-            s1 = input("Enter first string: ")
-            s2 = input("Enter second string: ")
-        
-            result = algorithm[operation](s1, s2)
-            print("\nResult: ", result)
-        else:
-            print("Wrong number. Try again.")
+        s1 = input("Enter first string: ")
+        s2 = input("Enter second string: ")
 
-        Menu()
-        operation = Operation(int(input(inputMsg)))
+        print("\nResult: ", algorithm[operation](s1, s2))
+
+        operation = getOperation()
 
 if __name__ == "__main__":
     Start()
