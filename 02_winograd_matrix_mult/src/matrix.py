@@ -36,7 +36,7 @@ def winograd_mult(m1: list[list[int]], m2: list[list[int]]) -> list[list[int]]:
                 result[i][j] = result[i][j] + (m1[i][2 * k] + m2[2 * k + 1][j]) \
                     * (m1[i][2 * k + 1] + m2[2 * k][j])
     
-    if (m1_cols % 2 == 1):
+    if m1_cols % 2 == 1:
         for i in range(m1_rows):
             for j in range(m2_cols):
                 result[i][j] = result[i][j] + m1[i][m1_cols - 1] * m2[m1_cols - 1][j]

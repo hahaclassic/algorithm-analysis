@@ -1,9 +1,7 @@
-import argparse
-import time
-import random
 from enum import Enum
 import typing
 import matrix
+import measure
 
 class Operation(Enum):
     MULT = 1
@@ -38,7 +36,7 @@ def start():
 
     functions: dict[Operation, typing.Callable[[None], None]] = {
         Operation.MULT: single_matrix_multiplication,
-        Operation.MEASURE: None
+        Operation.MEASURE: measure.measure_time
     }
 
     while operation != Operation.EXIT:
@@ -47,6 +45,7 @@ def start():
 
 
 def single_matrix_multiplication():
+    m1
     m1_rows = int(input("Enter number of rows of the 1st matrix: "))
     m1_cols = int(input("Enter number of columns of the 1st matrix: "))
     m2_rows = int(input("Enter number of rows of the 2nd matrix: "))
@@ -74,5 +73,18 @@ def single_matrix_multiplication():
         for row in result:
             print(row)
 
+
+def get_value(msg: str) -> int:
+    val = None 
+    while val is None:
+        try: 
+            val = int(input(msg))
+        except ValueError:
+            print("[ERR]: Invalid data. Try again.")
+
+    return val
+
+
 if __name__ == "__main__":
     start()
+
