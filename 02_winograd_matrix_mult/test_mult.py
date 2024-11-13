@@ -14,6 +14,14 @@ class TestMatrixMultiplication(unittest.TestCase):
         result = matrix.standard_mult(self.m1, self.m2)
         self.assertIsNotNone(result) 
         self.assertEqual(result, self.expected_result)
+
+    def test_empty_rows(self):
+        result = matrix.standard_mult([], [])
+        self.assertIsNone(result) 
+
+    def test_empty_cols(self):
+        result = matrix.standard_mult([[]], [[]])
+        self.assertIsNone(result) 
     
     def test_winograd_mult(self):
         result = matrix.winograd_mult(self.m1, self.m2)
