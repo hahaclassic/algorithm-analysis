@@ -1,10 +1,12 @@
 import matrix
 import time 
 import random
+from reader import get_value
+from tabulate import tabulate
 
 DEFAULT_NUM_OF_REPEATS = 5
 DEFAULT_START = 50
-DEFAULT_END = 301
+DEFAULT_END = 300
 DEFAULT_STEP = 50
 
 def measure_time() -> None:
@@ -12,16 +14,15 @@ def measure_time() -> None:
         "Standard Mult": matrix.standard_mult,
         "Winograd Mult": matrix.winograd_mult,
         "Optimized Winograd Mult": matrix.winograd_optimized_mult,
-        "NIKITA": matrix.dotprod_winograd,
     }
 
     params = get_measurement_parameters()
+    table = [["Size", "Standard Mult", "Winograd Mult", "Optimized Winograd Mult"]]
 
-    for size in range(params['start'], params['end'], params['step']):
-        print("----------------------------------")
-        print(f"SIZE: {size}")
-        print("----------------------------------")
-        for name, func in algorithms.items():
+    for size in range(params['start'], params['end'] + 1, params['step']):
+        print(f"size = {size}: measuring...")
+        row = [size]
+        for _, func in algorithms.items():
             elapsed_time = 0
             for _ in range(params['repeats']):
                 m1 = generate_matrix(size)
@@ -32,7 +33,13 @@ def measure_time() -> None:
                 end_time = time.process_time()
                 elapsed_time += end_time - start_time
 
-            print(f"{name}: {elapsed_time / params['repeats']:.4f} seconds")
+            avg_time = elapsed_time / params['repeats']
+            row.append(f"{avg_time:.4f} seconds")
+
+        print(f"size = {size}: done.")
+        table.append(row)
+
+    print(tabulate(table, headers="firstrow", tablefmt="grid"))
 
 
 def generate_matrix(size: int) -> list[list[int]]:
@@ -40,23 +47,14 @@ def generate_matrix(size: int) -> list[list[int]]:
 
 
 def get_measurement_parameters() -> dict[str, int]:
-    info = "(Press enter for default value)"
+    info = "(Press enter for default value = {})"
     return {
-        "start": get_value(f"Enter start {info}: ", DEFAULT_START),
-        "end": get_value(f"Enter end {info}: ", DEFAULT_END),
-        "step": get_value(f"Enter step {info}: ", DEFAULT_STEP),
-        "repeats": get_value(f"Enter number of repeats per one size {info}: ", DEFAULT_NUM_OF_REPEATS)
+        "start": get_value("Enter start", 
+                           DEFAULT_START, lambda x: x > 0),
+        "end": get_value("Enter end", 
+                         DEFAULT_END, lambda x: x > 0),
+        "step": get_value("Enter step", 
+                          DEFAULT_STEP, lambda x: x > 0),
+        "repeats": get_value("Enter number of repeats per one size", 
+                             DEFAULT_NUM_OF_REPEATS, lambda x: x > 0)
     }
-
-
-def get_value_default(msg: str, default: int) -> int:
-    val = None 
-    try: 
-        val = int(input(msg))
-    except ValueError:
-        val = default
-
-    if val < 1:
-        val = default
-    
-    return val

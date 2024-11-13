@@ -2,6 +2,7 @@ from enum import Enum
 import typing
 import matrix
 import measure
+from reader import get_value
 
 class Operation(Enum):
     MULT = 1
@@ -45,17 +46,16 @@ def start():
 
 
 def single_matrix_multiplication():
-    m1
-    m1_rows = int(input("Enter number of rows of the 1st matrix: "))
-    m1_cols = int(input("Enter number of columns of the 1st matrix: "))
-    m2_rows = int(input("Enter number of rows of the 2nd matrix: "))
-    m2_cols = int(input("Enter number of columns of the 2nd matrix: "))
+    m1_rows = get_value("Enter number of rows of the 1st matrix: ", check=lambda x: x > 0)
+    m1_cols = get_value("Enter number of columns of the 1st matrix: ", check=lambda x: x > 0)
+    m2_rows = get_value("Enter number of rows of the 2nd matrix: ", check=lambda x: x > 0)
+    m2_cols = get_value("Enter number of columns of the 2nd matrix: ", check=lambda x: x > 0)
 
     print("\nEnter elements of the 1st matrix:")
-    m1 = [[int(input(f"Elem [{i}][{j}]: ")) for j in range(m1_cols)] for i in range(m1_rows)]
+    m1 = [[get_value(f"Elem [{i}][{j}]: ") for j in range(m1_cols)] for i in range(m1_rows)]
 
     print("\nEnter elements of the 2nd matrix:")
-    m2 = [[int(input(f"Elem [{i}][{j}]: ")) for j in range(m2_cols)] for i in range(m2_rows)]
+    m2 = [[get_value(f"Elem [{i}][{j}]: ") for j in range(m2_cols)] for i in range(m2_rows)]
 
     algorithms = {
         "Standard": matrix.standard_mult,
@@ -72,17 +72,6 @@ def single_matrix_multiplication():
 
         for row in result:
             print(row)
-
-
-def get_value(msg: str) -> int:
-    val = None 
-    while val is None:
-        try: 
-            val = int(input(msg))
-        except ValueError:
-            print("[ERR]: Invalid data. Try again.")
-
-    return val
 
 
 if __name__ == "__main__":
