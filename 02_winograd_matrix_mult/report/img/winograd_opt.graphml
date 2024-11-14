@@ -54,130 +54,123 @@
 					</y:CompositeLabelModel>
 				</y:CompositeLabelModelParameter.Model>
 			</y:CompositeLabelModelParameter>
-			<yjs:Font x:Key="9" fontSize="12" fontFamily="Roboto"/>
-			<yjs:Stroke x:Key="10" fill="#FF000000" miterLimit="1.45"/>
-			<y:FreeNodePortLocationModelParameter x:Key="11" Ratio="0.9938271604938271,0.5"/>
+			<yjs:Stroke x:Key="9" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="10" Ratio="0.9938271604938271,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="11" Ratio="0.006172839506172867,0.5"/>
 			<y:FreeNodePortLocationModelParameter x:Key="12" Ratio="0.006172839506172867,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.006172839506172867,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="14" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="15" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="16" Ratio="0.006172839506172867,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="17" Ratio="0.9938271604938271,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="18" Ratio="0.5,0.019230769230769218"/>
-			<yjs:Stroke x:Key="19" fill="#FF000000" miterLimit="1.45"/>
-			<y:FreeNodePortLocationModelParameter x:Key="20" Ratio="0.003912363067292646,0.5"/>
-			<yjs:SolidColorFill x:Key="21" color="Black"/>
-			<y:FreeNodePortLocationModelParameter x:Key="22" Ratio="0.5,0.021698375817623572"/>
-			<yjs:Font x:Key="23" fontSize="12"/>
-			<yjs:Font x:Key="24" fontFamily="Roboto"/>
+			<y:FreeNodePortLocationModelParameter x:Key="15" Ratio="0.006172839506172867,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="16" Ratio="0.9938271604938271,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="17" Ratio="0.5,0.019230769230769218"/>
+			<yjs:Stroke x:Key="18" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="19" Ratio="0.003912363067292646,0.5"/>
+			<yjs:SolidColorFill x:Key="20" color="Black"/>
+			<y:FreeNodePortLocationModelParameter x:Key="21" Ratio="0.5,0.021698375817623572"/>
+			<yjs:Font x:Key="22" fontSize="12"/>
+			<y:FreeNodePortLocationModelParameter x:Key="23" Ratio="0.5,0.020725388601036288"/>
+			<y:FreeNodePortLocationModelParameter x:Key="24" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="25" Ratio="0.5,0.020725388601036288"/>
-			<y:FreeNodePortLocationModelParameter x:Key="26" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="26" Ratio="0.5,0.020725388601036288"/>
 			<y:FreeNodePortLocationModelParameter x:Key="27" Ratio="0.5,0.020725388601036288"/>
 			<y:FreeNodePortLocationModelParameter x:Key="28" Ratio="0.5,0.020725388601036288"/>
 			<y:FreeNodePortLocationModelParameter x:Key="29" Ratio="0.5,0.020725388601036288"/>
-			<y:FreeNodePortLocationModelParameter x:Key="30" Ratio="0.5,0.020725388601036288"/>
-			<y:FreeNodePortLocationModelParameter x:Key="31" Ratio="0.5,0.020725388601036288"/>
-			<y:InteriorLabelModel x:Key="32"/>
-			<y:CompositeLabelModelParameter x:Key="33" Model="{y:GraphMLReference 66}">
+			<y:InteriorLabelModel x:Key="30"/>
+			<y:CompositeLabelModelParameter x:Key="31" Model="{y:GraphMLReference 61}">
 				<y:CompositeLabelModelParameter.Parameter>
-					<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 32}"/>
+					<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 30}"/>
 				</y:CompositeLabelModelParameter.Parameter>
 			</y:CompositeLabelModelParameter>
-			<y:FreeNodePortLocationModelParameter x:Key="34" Ratio="0.5,0.016129032258064502"/>
-			<yjs:Font x:Key="35" fontSize="12" fontFamily="Roboto"/>
-			<y:FreeNodePortLocationModelParameter x:Key="36" Ratio="0.005479452054794498,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="37" Ratio="0.9963859163678459,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="38" Ratio="0.5,0.025806451612903236"/>
-			<yjs:Font x:Key="39" fontFamily="Roboto"/>
-			<yjs:Font x:Key="40"/>
-			<yjs:Font x:Key="41"/>
-			<y:FreeNodePortLocationModelParameter x:Key="42" Ratio="0.5,0.012779552715654952"/>
-			<y:FreeNodePortLocationModelParameter x:Key="43" Ratio="0.0049261083743842304,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="44" Ratio="0.9950738916256158,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="32" Ratio="0.5,0.016129032258064502"/>
+			<yjs:Font x:Key="33" fontSize="12" fontFamily="Roboto"/>
+			<y:FreeNodePortLocationModelParameter x:Key="34" Ratio="0.005479452054794498,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="35" Ratio="0.9963859163678459,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="36" Ratio="0.5,0.025806451612903236"/>
+			<yjs:Font x:Key="37" fontSize="12" fontFamily="Roboto"/>
+			<y:FreeNodePortLocationModelParameter x:Key="38" Ratio="0.5,0.012779552715654952"/>
+			<y:FreeNodePortLocationModelParameter x:Key="39" Ratio="0.0049261083743842304,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="40" Ratio="0.9950738916256158,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="41" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="42" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="43" Ratio="0.5,0.019230769230769273"/>
+			<y:FreeNodePortLocationModelParameter x:Key="44" Ratio="0.9943438539123521,0.5"/>
 			<y:FreeNodePortLocationModelParameter x:Key="45" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="46" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="47" Ratio="0.5,0.019230769230769273"/>
-			<y:FreeNodePortLocationModelParameter x:Key="48" Ratio="0.9943438539123521,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="49" Ratio="0.5,0.025806451612903236"/>
-			<yjs:Font x:Key="50" fontFamily="Roboto"/>
-			<y:FreeNodePortLocationModelParameter x:Key="51" Ratio="0.5,0.019230769230769273"/>
-			<y:FreeNodePortLocationModelParameter x:Key="52" Ratio="0.005656146087648473,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="53" Ratio="0.5,0.019230769230769273"/>
-			<yjs:SolidColorFill x:Key="54" color="Black"/>
-			<yjs:Stroke x:Key="55" fill="#FF000000" miterLimit="1.45"/>
-			<y:FreeNodePortLocationModelParameter x:Key="56" Ratio="0.5,0.00029296875"/>
-			<y:FreeNodePortLocationModelParameter x:Key="57" Ratio="0.494574999999989,0.7868846847999476"/>
-			<y:FreeNodePortLocationModelParameter x:Key="58" Ratio="0.5,0.9807692307692308"/>
-			<y:FreeNodePortLocationModelParameter x:Key="59" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="60" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="61" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="62" Ratio="0.5,0.019230769230769218"/>
-			<y:RatioAnchoredLabelModelParameter x:Key="63" LayoutOffset="62.5244140625,18.87451171875"/>
-			<yjs:Stroke x:Key="64" fill="#FF000000" miterLimit="1.45"/>
-			<y:FreeNodePortLocationModelParameter x:Key="65" Ratio="0.5,0.9807692307692308"/>
-			<y:CompositeLabelModel x:Key="66">
+			<y:FreeNodePortLocationModelParameter x:Key="46" Ratio="0.5,0.019230769230769273"/>
+			<y:FreeNodePortLocationModelParameter x:Key="47" Ratio="0.005656146087648473,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="48" Ratio="0.5,0.019230769230769273"/>
+			<yjs:SolidColorFill x:Key="49" color="Black"/>
+			<yjs:Stroke x:Key="50" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="51" Ratio="0.5,0.00029296875"/>
+			<y:FreeNodePortLocationModelParameter x:Key="52" Ratio="0.494574999999989,0.7868846847999476"/>
+			<y:FreeNodePortLocationModelParameter x:Key="53" Ratio="0.5,0.9807692307692308"/>
+			<y:FreeNodePortLocationModelParameter x:Key="54" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="55" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="56" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="57" Ratio="0.5,0.019230769230769218"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="58" LayoutOffset="62.5244140625,18.87451171875"/>
+			<yjs:Stroke x:Key="59" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="60" Ratio="0.5,0.9807692307692308"/>
+			<y:CompositeLabelModel x:Key="61">
 				<y:CompositeLabelModel.LabelModels>
 					<y:ExteriorLabelModel Insets="5"/>
-					<y:GraphMLReference ResourceKey="32"/>
+					<y:GraphMLReference ResourceKey="30"/>
 					<x:Static Member="y:FreeNodeLabelModel.Instance"/>
 				</y:CompositeLabelModel.LabelModels>
 			</y:CompositeLabelModel>
-			<y:FreeNodePortLocationModelParameter x:Key="67" Ratio="0.51875,0.5816326530612245"/>
-			<y:FreeNodePortLocationModelParameter x:Key="68" Ratio="0.51875,0.5816326530612245"/>
-			<y:FreeNodePortLocationModelParameter x:Key="69" Ratio="0.51875,0.5816326530612245"/>
-			<y:FreeNodePortLocationModelParameter x:Key="70" Ratio="0.51875,0.5816326530612245"/>
-			<y:FreeNodePortLocationModelParameter x:Key="71" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="72" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="73" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="74" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="75" Ratio="0.51875,0.107439104674129"/>
-			<y:FreeNodePortLocationModelParameter x:Key="76" Ratio="0.51875,0.107439104674129"/>
-			<y:FreeNodePortLocationModelParameter x:Key="77" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="78" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="62" Ratio="0.51875,0.5816326530612245"/>
+			<y:FreeNodePortLocationModelParameter x:Key="63" Ratio="0.51875,0.5816326530612245"/>
+			<y:FreeNodePortLocationModelParameter x:Key="64" Ratio="0.51875,0.5816326530612245"/>
+			<y:FreeNodePortLocationModelParameter x:Key="65" Ratio="0.51875,0.5816326530612245"/>
+			<y:FreeNodePortLocationModelParameter x:Key="66" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="67" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="68" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="69" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="70" Ratio="0.51875,0.107439104674129"/>
+			<y:FreeNodePortLocationModelParameter x:Key="71" Ratio="0.51875,0.107439104674129"/>
+			<y:FreeNodePortLocationModelParameter x:Key="72" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="73" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="74" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="75" Ratio="0.5,0.019230769230769218"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="76" LayoutOffset="65.90087890625,18.87451171875"/>
+			<yjs:SolidColorFill x:Key="77" color="Black"/>
+			<yjs:Stroke x:Key="78" fill="#FF000000" miterLimit="1.45"/>
 			<y:FreeNodePortLocationModelParameter x:Key="79" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="80" Ratio="0.5,0.019230769230769218"/>
-			<y:RatioAnchoredLabelModelParameter x:Key="81" LayoutOffset="65.90087890625,18.87451171875"/>
-			<yjs:Font x:Key="82" fontFamily="Roboto"/>
-			<yjs:SolidColorFill x:Key="83" color="Black"/>
-			<yjs:Stroke x:Key="84" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="81" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="82" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="83" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="84" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="85" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="86" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="87" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="88" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="89" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="90" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="91" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="92" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="93" Ratio="0.5,0.019230769230769218"/>
+			<y:FreeNodePortLocationModelParameter x:Key="91" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="92" Ratio="0.5,0.025806451612903236"/>
+			<y:FreeNodePortLocationModelParameter x:Key="93" Ratio="0.5,0.025806451612903236"/>
 			<y:FreeNodePortLocationModelParameter x:Key="94" Ratio="0.5,0.019230769230769218"/>
 			<y:FreeNodePortLocationModelParameter x:Key="95" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="96" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="97" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="98" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="99" Ratio="0.5,0.025806451612903236"/>
-			<y:FreeNodePortLocationModelParameter x:Key="100" Ratio="0.5,0.019230769230769218"/>
-			<y:FreeNodePortLocationModelParameter x:Key="101" Ratio="0.5,0.019230769230769218"/>
-			<yjs:Arrow x:Key="102" type="NONE"/>
-			<yjs:Stroke x:Key="103" fill="#FF000000" thickness="0.75"/>
-			<yjs:PolylineEdgeStyle x:Key="104" stroke="{y:GraphMLReference 103}"/>
-			<yjs:Stroke x:Key="105" fill="#FF000000" miterLimit="1.45">
+			<yjs:Arrow x:Key="96" type="NONE"/>
+			<yjs:Stroke x:Key="97" fill="#FF000000" thickness="0.75"/>
+			<yjs:PolylineEdgeStyle x:Key="98" stroke="{y:GraphMLReference 97}"/>
+			<yjs:Stroke x:Key="99" fill="#FF000000" miterLimit="1.45">
 				<yjs:Stroke.dashStyle>
 					<yjs:DashStyle dashes="6 2" offset="0"/>
 				</yjs:Stroke.dashStyle>
 			</yjs:Stroke>
-			<yjs:SolidColorFill x:Key="106" color="Black"/>
-			<yjs:PolylineEdgeStyle x:Key="107" stroke="{y:GraphMLReference 109}" targetArrow="{y:GraphMLReference 110}" sourceArrow="{y:GraphMLReference 102}"/>
+			<yjs:SolidColorFill x:Key="100" color="Black"/>
+			<yjs:PolylineEdgeStyle x:Key="101" stroke="{y:GraphMLReference 103}" targetArrow="{y:GraphMLReference 104}" sourceArrow="{y:GraphMLReference 96}"/>
+			<y:SmartEdgeLabelModel x:Key="102"/>
+			<yjs:Stroke x:Key="103" fill="{y:GraphMLReference 100}" miterLimit="1.45"/>
+			<yjs:Arrow x:Key="104" stroke="#FF000000" fill="{y:GraphMLReference 100}"/>
+			<yjs:PolylineEdgeStyle x:Key="105" stroke="{y:GraphMLReference 97}"/>
+			<yjs:PolylineEdgeStyle x:Key="106" stroke="{y:GraphMLReference 97}"/>
+			<yjs:PolylineEdgeStyle x:Key="107" stroke="{y:GraphMLReference 103}" targetArrow="{y:GraphMLReference 104}" sourceArrow="{y:GraphMLReference 96}"/>
 			<y:SmartEdgeLabelModel x:Key="108"/>
-			<yjs:Stroke x:Key="109" fill="{y:GraphMLReference 106}" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="110" stroke="#FF000000" fill="{y:GraphMLReference 106}"/>
-			<yjs:PolylineEdgeStyle x:Key="111" stroke="{y:GraphMLReference 103}"/>
-			<yjs:PolylineEdgeStyle x:Key="112" stroke="{y:GraphMLReference 103}"/>
-			<yjs:PolylineEdgeStyle x:Key="113" stroke="{y:GraphMLReference 109}" targetArrow="{y:GraphMLReference 110}" sourceArrow="{y:GraphMLReference 102}"/>
-			<y:SmartEdgeLabelModel x:Key="114"/>
-			<yjs:Font x:Key="115" fontFamily="Roboto"/>
-			<yjs:PolylineEdgeStyle x:Key="116" stroke="{y:GraphMLReference 103}"/>
-			<yjs:PolylineEdgeStyle x:Key="117" stroke="{y:GraphMLReference 103}"/>
-			<yjs:PolylineEdgeStyle x:Key="118" stroke="{y:GraphMLReference 103}"/>
+			<yjs:PolylineEdgeStyle x:Key="109" stroke="{y:GraphMLReference 97}"/>
+			<yjs:PolylineEdgeStyle x:Key="110" stroke="{y:GraphMLReference 97}"/>
+			<yjs:PolylineEdgeStyle x:Key="111" stroke="{y:GraphMLReference 97}"/>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -188,10 +181,10 @@
 			<data key="d0">26</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 63}">
+					<y:Label LayoutParameter="{y:GraphMLReference 58}">
 						<y:Label.Text>Начало</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 50}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -200,14 +193,14 @@
 				<y:RectD X="98.8160000000014" Y="815.8658982603214" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 64}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 59}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="65"/>
+					<y:GraphMLReference ResourceKey="60"/>
 				</data>
 			</port>
 			<port name="p4"/>
@@ -235,12 +228,12 @@
 				<y:RectD X="308.1420000000013" Y="805.7440482603214" Width="228.8499999999999" Height="70.24369999999976"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 19}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 18}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="20"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 		</node>
@@ -313,7 +306,7 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-16.254312499998605" Y="1039.481153789241" Width="137.1953125" Height="46.25"/>
+				<y:RectD X="-16.254312499998605" Y="1046.7589686735373" Width="137.1953125" Height="46.25"/>
 			</data>
 			<data key="d7">
 				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
@@ -371,18 +364,24 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[m1_rows < 1 или m2_rows < 1]]></y:Label.Text>
+						<y:Label.Text><![CDATA[m1_rows < 1 или 
+m2_rows < 1 или
+m1_cols != m2_rows]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 9}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" textFill="BLACK">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="12" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="78.3160000000014" Y="963.2311537892413" Width="201" Height="76.25"/>
+				<y:RectD X="74.0660000000014" Y="950.8561537892413" Width="209.5" Height="101"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 10}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 9}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
@@ -392,63 +391,63 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 			<port name="p5"/>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="11"/>
+					<y:GraphMLReference ResourceKey="10"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="12"/>
+					<y:GraphMLReference ResourceKey="11"/>
 				</data>
 			</port>
 			<port name="p9"/>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="13"/>
+					<y:GraphMLReference ResourceKey="12"/>
 				</data>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="14"/>
+					<y:GraphMLReference ResourceKey="13"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="15"/>
+					<y:GraphMLReference ResourceKey="14"/>
 				</data>
 			</port>
 			<port name="p13"/>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
+					<y:GraphMLReference ResourceKey="15"/>
 				</data>
 			</port>
 			<port name="p15"/>
 			<port name="p16">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
+					<y:GraphMLReference ResourceKey="16"/>
 				</data>
 			</port>
 			<port name="p17">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
+					<y:GraphMLReference ResourceKey="17"/>
 				</data>
 			</port>
 			<port name="p18">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="42"/>
+					<y:GraphMLReference ResourceKey="38"/>
 				</data>
 			</port>
 			<port name="p19"/>
 			<port name="p20">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="43"/>
+					<y:GraphMLReference ResourceKey="39"/>
 				</data>
 			</port>
 			<port name="p21"/>
 			<port name="p22">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="44"/>
+					<y:GraphMLReference ResourceKey="40"/>
 				</data>
 			</port>
 		</node>
@@ -459,7 +458,7 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[m1_rows < 1 или m2_rows < 1]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 9}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 37}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -468,7 +467,7 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 				<y:RectD X="-48.156656249998605" Y="1109.1648284676912" Width="201" Height="76.25"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 10}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 9}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
@@ -478,46 +477,46 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 			<port name="p5"/>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="11"/>
+					<y:GraphMLReference ResourceKey="10"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="12"/>
+					<y:GraphMLReference ResourceKey="11"/>
 				</data>
 			</port>
 			<port name="p9"/>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="13"/>
+					<y:GraphMLReference ResourceKey="12"/>
 				</data>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="14"/>
+					<y:GraphMLReference ResourceKey="13"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="15"/>
+					<y:GraphMLReference ResourceKey="14"/>
 				</data>
 			</port>
 			<port name="p13"/>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
+					<y:GraphMLReference ResourceKey="15"/>
 				</data>
 			</port>
 			<port name="p15"/>
 			<port name="p16">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
+					<y:GraphMLReference ResourceKey="16"/>
 				</data>
 			</port>
 			<port name="p17">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
+					<y:GraphMLReference ResourceKey="17"/>
 				</data>
 			</port>
 			<port name="p18">
@@ -551,7 +550,7 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Вернуть None]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 54}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 49}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -560,43 +559,43 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 				<y:RectD X="1367.095328125" Y="1519.9158087158453" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 55}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 50}" fill="{x:Null}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="56"/>
+					<y:GraphMLReference ResourceKey="51"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="57"/>
+					<y:GraphMLReference ResourceKey="52"/>
 				</data>
 			</port>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="58"/>
+					<y:GraphMLReference ResourceKey="53"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="59"/>
+					<y:GraphMLReference ResourceKey="54"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="60"/>
+					<y:GraphMLReference ResourceKey="55"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="61"/>
+					<y:GraphMLReference ResourceKey="56"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="62"/>
+					<y:GraphMLReference ResourceKey="57"/>
 				</data>
 			</port>
 			<port name="p9"/>
@@ -630,7 +629,7 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[result = create_matrix(m1_rows, m2_cols)]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -655,7 +654,7 @@ m2_cols = длина(m2[0])]]></y:Label.Text>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="22"/>
+					<y:GraphMLReference ResourceKey="21"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -700,17 +699,17 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="88.5660000000014" Y="1198.144793321511" Width="180.5" Height="46.25"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 19}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 18}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="20"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="36"/>
+					<y:GraphMLReference ResourceKey="34"/>
 				</data>
 			</port>
 			<port name="p3"/>
@@ -722,7 +721,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[k = 0 ... m1_half_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -740,7 +739,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -764,7 +763,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -795,7 +794,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="38"/>
+					<y:GraphMLReference ResourceKey="36"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -805,7 +804,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="71"/>
+					<y:GraphMLReference ResourceKey="66"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -857,7 +856,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="22"/>
+					<y:GraphMLReference ResourceKey="21"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -891,7 +890,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="37"/>
+					<y:GraphMLReference ResourceKey="35"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -936,7 +935,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="22"/>
+					<y:GraphMLReference ResourceKey="21"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1004,7 +1003,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 						<y:Label.Text><![CDATA[result[0][0] += (m1[0][k << 1] + m2[(k << 1) + 1][0]) \
       * (m1[0][(k << 1) + 1] + m2[k << 1][0])]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1021,7 +1020,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<port name="p3"/>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
+					<y:GraphMLReference ResourceKey="41"/>
 				</data>
 			</port>
 			<port name="p5"/>
@@ -1034,7 +1033,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[i = 0 ... m1_rows]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1052,7 +1051,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1076,7 +1075,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1133,7 +1132,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[j = 0 ... m1_cols ]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 39}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1151,7 +1150,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1175,7 +1174,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1219,7 +1218,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>j++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 40}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1237,7 +1236,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1254,7 +1253,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1264,7 +1263,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1274,7 +1273,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1284,7 +1283,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1345,7 +1344,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>i++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 41}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1363,7 +1362,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1380,7 +1379,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1390,7 +1389,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1400,7 +1399,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1410,7 +1409,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1461,7 +1460,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[k = 0 ... m1_half_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1479,7 +1478,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1503,7 +1502,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1550,7 +1549,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>k++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1568,7 +1567,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1585,7 +1584,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1595,7 +1594,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1605,7 +1604,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1615,7 +1614,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1672,7 +1671,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[result[i][j] = -mul_rows[i] - mul_cols[j]]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1701,7 +1700,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 (m1[i][2 * k] + m2[2 * k + 1][j]) 
 * (m1[i][2 * k + 1] + m2[2 * k][j])]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1725,10 +1724,10 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">99</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 33}">
+					<y:Label LayoutParameter="{y:GraphMLReference 31}">
 						<y:Label.Text>Б</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 35}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 33}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1746,7 +1745,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="34"/>
+					<y:GraphMLReference ResourceKey="32"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1773,7 +1772,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">100</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 33}">
+					<y:Label LayoutParameter="{y:GraphMLReference 31}">
 						<y:Label.Text>В</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" textFill="BLACK">
@@ -1798,7 +1797,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="34"/>
+					<y:GraphMLReference ResourceKey="32"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1825,10 +1824,10 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">103</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 33}">
+					<y:Label LayoutParameter="{y:GraphMLReference 31}">
 						<y:Label.Text>Б</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 35}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 33}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1846,7 +1845,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="34"/>
+					<y:GraphMLReference ResourceKey="32"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1898,22 +1897,22 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="88.5660000000014" Y="1263.780189086754" Width="259.125" Height="46.25"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 19}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 18}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="20"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="36"/>
+					<y:GraphMLReference ResourceKey="34"/>
 				</data>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="37"/>
+					<y:GraphMLReference ResourceKey="35"/>
 				</data>
 			</port>
 		</node>
@@ -1939,17 +1938,17 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="88.5660000000014" Y="1329.4155848519968" Width="259.125" Height="46.25"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 19}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 18}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="20"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="36"/>
+					<y:GraphMLReference ResourceKey="34"/>
 				</data>
 			</port>
 		</node>
@@ -1960,7 +1959,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[m1_half_cols = m1_cols >> 1]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1989,7 +1988,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[is_odd = (m1_cols & 1 == 1)]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2006,7 +2005,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<port name="p3"/>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="49"/>
+					<y:GraphMLReference ResourceKey="45"/>
 				</data>
 			</port>
 			<port name="p5"/>
@@ -2016,10 +2015,10 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">108</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 33}">
+					<y:Label LayoutParameter="{y:GraphMLReference 31}">
 						<y:Label.Text>A</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 35}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 33}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2037,7 +2036,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="34"/>
+					<y:GraphMLReference ResourceKey="32"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2081,7 +2080,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">109</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 33}">
+					<y:Label LayoutParameter="{y:GraphMLReference 31}">
 						<y:Label.Text>A</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" textFill="BLACK">
@@ -2106,7 +2105,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="34"/>
+					<y:GraphMLReference ResourceKey="32"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2129,7 +2128,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[j = 1 ... m2_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2147,7 +2146,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2171,7 +2170,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2202,7 +2201,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="38"/>
+					<y:GraphMLReference ResourceKey="36"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2246,7 +2245,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[k = 0 ... m1_half_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 39}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2264,7 +2263,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2288,7 +2287,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2333,7 +2332,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 						<y:Label.Text><![CDATA[result[0][j] += (m1[0][k << 1] + m2[(k << 1) + 1][j]) \
         * (m1[0][(k << 1) + 1] + m2[k << 1][j])]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2358,7 +2357,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>k++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 40}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2376,7 +2375,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2393,7 +2392,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2403,7 +2402,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2413,7 +2412,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2423,7 +2422,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2468,7 +2467,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="67"/>
+					<y:GraphMLReference ResourceKey="62"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2478,7 +2477,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="68"/>
+					<y:GraphMLReference ResourceKey="63"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2508,7 +2507,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>j++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 41}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -2526,7 +2525,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2543,7 +2542,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2553,7 +2552,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2563,7 +2562,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2573,7 +2572,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -2610,6 +2609,554 @@ m1_rows на m2_cols]]></y:Label.Text>
 				</data>
 			</port>
 			<port name="p10">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="64"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="65"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n35">
+			<data key="d0">115</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 31}">
+						<y:Label.Text>В</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" textFill="BLACK">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="12" fontFamily="Roboto"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="709.0658281250012" Y="1640.3839799437983" Width="87.75" Height="44.08639874270193"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="start2" fill="WHITE"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-47.5,1812.25,100,60"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="32"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n36">
+			<data key="d0">116</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>is_odd</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 37}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="665.5414140625015" Y="1037.606153789241" Width="174.7988281249999" Height="50"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 9}" fill="{x:Null}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+			<port name="p5"/>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="10"/>
+				</data>
+			</port>
+			<port name="p7"/>
+			<port name="p8">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+			<port name="p9"/>
+			<port name="p10">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p13"/>
+			<port name="p14">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="15"/>
+				</data>
+			</port>
+			<port name="p15"/>
+			<port name="p16">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="16"/>
+				</data>
+			</port>
+			<port name="p17">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="17"/>
+				</data>
+			</port>
+			<port name="p18">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="38"/>
+				</data>
+			</port>
+			<port name="p19"/>
+			<port name="p20">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="39"/>
+				</data>
+			</port>
+			<port name="p21"/>
+			<port name="p22">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="40"/>
+				</data>
+			</port>
+			<port name="p23">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="43"/>
+				</data>
+			</port>
+			<port name="p24"/>
+			<port name="p25">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="44"/>
+				</data>
+			</port>
+			<port name="p26"/>
+			<port name="p27">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.019230769230769273"/>
+				</data>
+			</port>
+			<port name="p28"/>
+			<port name="p29">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5171625864554116,0.07923076923077133"/>
+				</data>
+			</port>
+		</node>
+		<node id="n37">
+			<data key="d0">117</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[result[0][0] += m1[0][m1_cols - 1] 
+* m2[m1_cols - 1][0]]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="787.4408281250013" Y="1093.5931821337354" Width="194" Height="36.75"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="41"/>
+				</data>
+			</port>
+			<port name="p5"/>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="42"/>
+				</data>
+			</port>
+			<port name="p7"/>
+			<port name="p8"/>
+		</node>
+		<node id="n38">
+			<data key="d0">120</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[result[0][j] -= mul_rows[0] + mul_cols[j]]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="646.6908281250011" Y="1218.0965483447862" Width="212.5" Height="36.75"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="41"/>
+				</data>
+			</port>
+			<port name="p5"/>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="42"/>
+				</data>
+			</port>
+			<port name="p7"/>
+			<port name="p8"/>
+			<port name="p9"/>
+		</node>
+		<node id="n39">
+			<data key="d0">121</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>is_odd</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 37}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="665.5414140625013" Y="1432.968432281267" Width="174.7988281249999" Height="50"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 9}" fill="{x:Null}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+			<port name="p5"/>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="10"/>
+				</data>
+			</port>
+			<port name="p7"/>
+			<port name="p8">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+			<port name="p9"/>
+			<port name="p10">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p13"/>
+			<port name="p14">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="15"/>
+				</data>
+			</port>
+			<port name="p15"/>
+			<port name="p16">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="16"/>
+				</data>
+			</port>
+			<port name="p17">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="17"/>
+				</data>
+			</port>
+			<port name="p18">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="38"/>
+				</data>
+			</port>
+			<port name="p19"/>
+			<port name="p20">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="39"/>
+				</data>
+			</port>
+			<port name="p21"/>
+			<port name="p22">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="40"/>
+				</data>
+			</port>
+			<port name="p23">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="43"/>
+				</data>
+			</port>
+			<port name="p24"/>
+			<port name="p25">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="44"/>
+				</data>
+			</port>
+			<port name="p26"/>
+			<port name="p27">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="46"/>
+				</data>
+			</port>
+			<port name="p28"/>
+			<port name="p29">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="47"/>
+				</data>
+			</port>
+			<port name="p30"/>
+			<port name="p31">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="48"/>
+				</data>
+			</port>
+		</node>
+		<node id="n40">
+			<data key="d0">122</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[result[0][j] += m1[0][m1_cols - 1] 
+* m2[m1_cols - 1][j]]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="828.5" Y="1492.8074689225723" Width="194" Height="36.75"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="41"/>
+				</data>
+			</port>
+			<port name="p5"/>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="42"/>
+				</data>
+			</port>
+			<port name="p7"/>
+			<port name="p8"/>
+			<port name="p9"/>
+		</node>
+		<node id="n41">
+			<data key="d0">123</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[result[0][0] -= mul_rows[0] + mul_cols[0]]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-194.58165624999856" Y="1506.8553860782686" Width="228.8499999999999" Height="36.75"/>
+			</data>
+			<data key="d7">
+				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="45"/>
+				</data>
+			</port>
+			<port name="p5"/>
+			<port name="p6"/>
+			<port name="p7"/>
+			<port name="p8"/>
+		</node>
+		<node id="n42">
+			<data key="d0">124</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
+						<y:Label.Text>k++</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="672.9408281250012" Y="982.9811537892413" Width="160" Height="36.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle cornerStyle="CUT" corners="BOTTOM"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="182.0093593750014,1130.7484482603213,151.806640625,46.25"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="25"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="26"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="27"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="28"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="29"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="67"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="68"/>
+				</data>
 				<data key="d18">
 					<y:ViewState>
 						<y:Port x:Key="c|view"/>
@@ -2636,557 +3183,9 @@ m1_rows на m2_cols]]></y:Label.Text>
 					</y:ViewState>
 				</data>
 			</port>
-		</node>
-		<node id="n35">
-			<data key="d0">115</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 33}">
-						<y:Label.Text>В</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" textFill="BLACK">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="Roboto"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="709.0658281250012" Y="1640.3839799437983" Width="87.75" Height="44.08639874270193"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="start2" fill="WHITE"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="-47.5,1812.25,100,60"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="34"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-		</node>
-		<node id="n36">
-			<data key="d0">116</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text>is_odd</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 9}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="665.5414140625015" Y="1037.606153789241" Width="174.7988281249999" Height="50"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 10}" fill="{x:Null}"/>
-			</data>
-			<port name="p0"/>
-			<port name="p1"/>
-			<port name="p2"/>
-			<port name="p3"/>
-			<port name="p4"/>
-			<port name="p5"/>
-			<port name="p6">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="11"/>
-				</data>
-			</port>
-			<port name="p7"/>
-			<port name="p8">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="12"/>
-				</data>
-			</port>
-			<port name="p9"/>
-			<port name="p10">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="13"/>
-				</data>
-			</port>
-			<port name="p11">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="14"/>
-				</data>
-			</port>
-			<port name="p12">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="15"/>
-				</data>
-			</port>
-			<port name="p13"/>
-			<port name="p14">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
-				</data>
-			</port>
-			<port name="p15"/>
-			<port name="p16">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
-				</data>
-			</port>
-			<port name="p17">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
-				</data>
-			</port>
-			<port name="p18">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="42"/>
-				</data>
-			</port>
-			<port name="p19"/>
-			<port name="p20">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="43"/>
-				</data>
-			</port>
-			<port name="p21"/>
-			<port name="p22">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="44"/>
-				</data>
-			</port>
-			<port name="p23">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="47"/>
-				</data>
-			</port>
-			<port name="p24"/>
-			<port name="p25">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="48"/>
-				</data>
-			</port>
-			<port name="p26"/>
-			<port name="p27">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.019230769230769273"/>
-				</data>
-			</port>
-			<port name="p28"/>
-			<port name="p29">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5171625864554116,0.07923076923077133"/>
-				</data>
-			</port>
-		</node>
-		<node id="n37">
-			<data key="d0">117</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[result[0][0] += m1[0][m1_cols - 1] 
-* m2[m1_cols - 1][0]]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="787.4408281250013" Y="1093.5931821337354" Width="194" Height="36.75"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
-			</data>
-			<port name="p0"/>
-			<port name="p1"/>
-			<port name="p2"/>
-			<port name="p3"/>
-			<port name="p4">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
-				</data>
-			</port>
-			<port name="p5"/>
-			<port name="p6">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="46"/>
-				</data>
-			</port>
-			<port name="p7"/>
-			<port name="p8"/>
-		</node>
-		<node id="n38">
-			<data key="d0">120</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[result[0][j] -= mul_rows[0] + mul_cols[j]]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="646.6908281250011" Y="1218.0965483447862" Width="212.5" Height="36.75"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
-			</data>
-			<port name="p0"/>
-			<port name="p1"/>
-			<port name="p2"/>
-			<port name="p3"/>
-			<port name="p4">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
-				</data>
-			</port>
-			<port name="p5"/>
-			<port name="p6">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="46"/>
-				</data>
-			</port>
-			<port name="p7"/>
-			<port name="p8"/>
-			<port name="p9"/>
-		</node>
-		<node id="n39">
-			<data key="d0">121</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text>is_odd</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 9}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="665.5414140625013" Y="1432.968432281267" Width="174.7988281249999" Height="50"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 10}" fill="{x:Null}"/>
-			</data>
-			<port name="p0"/>
-			<port name="p1"/>
-			<port name="p2"/>
-			<port name="p3"/>
-			<port name="p4"/>
-			<port name="p5"/>
-			<port name="p6">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="11"/>
-				</data>
-			</port>
-			<port name="p7"/>
-			<port name="p8">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="12"/>
-				</data>
-			</port>
-			<port name="p9"/>
-			<port name="p10">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="13"/>
-				</data>
-			</port>
-			<port name="p11">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="14"/>
-				</data>
-			</port>
-			<port name="p12">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="15"/>
-				</data>
-			</port>
-			<port name="p13"/>
-			<port name="p14">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
-				</data>
-			</port>
-			<port name="p15"/>
-			<port name="p16">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
-				</data>
-			</port>
-			<port name="p17">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
-				</data>
-			</port>
-			<port name="p18">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="42"/>
-				</data>
-			</port>
-			<port name="p19"/>
-			<port name="p20">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="43"/>
-				</data>
-			</port>
-			<port name="p21"/>
-			<port name="p22">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="44"/>
-				</data>
-			</port>
-			<port name="p23">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="47"/>
-				</data>
-			</port>
-			<port name="p24"/>
-			<port name="p25">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="48"/>
-				</data>
-			</port>
-			<port name="p26"/>
-			<port name="p27">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="51"/>
-				</data>
-			</port>
-			<port name="p28"/>
-			<port name="p29">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="52"/>
-				</data>
-			</port>
-			<port name="p30"/>
-			<port name="p31">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="53"/>
-				</data>
-			</port>
-		</node>
-		<node id="n40">
-			<data key="d0">122</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[result[0][j] += m1[0][m1_cols - 1] 
-* m2[m1_cols - 1][j]]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="828.5" Y="1492.8074689225723" Width="194" Height="36.75"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
-			</data>
-			<port name="p0"/>
-			<port name="p1"/>
-			<port name="p2"/>
-			<port name="p3"/>
-			<port name="p4">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
-				</data>
-			</port>
-			<port name="p5"/>
-			<port name="p6">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="46"/>
-				</data>
-			</port>
-			<port name="p7"/>
-			<port name="p8"/>
-			<port name="p9"/>
-		</node>
-		<node id="n41">
-			<data key="d0">123</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[result[0][0] -= mul_rows[0] + mul_cols[0]]]></y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="-194.58165624999856" Y="1506.8553860782686" Width="228.8499999999999" Height="36.75"/>
-			</data>
-			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 2}" fill="{x:Null}"/>
-			</data>
-			<port name="p0"/>
-			<port name="p1"/>
-			<port name="p2"/>
-			<port name="p3"/>
-			<port name="p4">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="49"/>
-				</data>
-			</port>
-			<port name="p5"/>
-			<port name="p6"/>
-			<port name="p7"/>
-			<port name="p8"/>
-		</node>
-		<node id="n42">
-			<data key="d0">124</data>
-			<data key="d4">
-				<x:List>
-					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
-						<y:Label.Text>k++</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 50}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
-			<data key="d5">
-				<y:RectD X="672.9408281250012" Y="982.9811537892413" Width="160" Height="36.75"/>
-			</data>
-			<data key="d7">
-				<yjs:RectangleNodeStyle cornerStyle="CUT" corners="BOTTOM"/>
-			</data>
-			<data key="d8">
-				<y:ViewState>
-					<y:FolderNodeState x:Key="c|view" Layout="182.0093593750014,1130.7484482603213,151.806640625,46.25"/>
-				</y:ViewState>
-			</data>
-			<port name="p0">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p1">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p5">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p6">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p7">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p8">
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p9">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="72"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p10">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="73"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p11">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="74"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
-			<port name="p12">
-				<data key="d16">
-					<y:GraphMLReference ResourceKey="75"/>
-				</data>
-				<data key="d18">
-					<y:ViewState>
-						<y:Port x:Key="c|view"/>
-					</y:ViewState>
-				</data>
-			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="76"/>
+					<y:GraphMLReference ResourceKey="71"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3223,7 +3222,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text>is_odd</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 9}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" font="{y:GraphMLReference 37}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3232,7 +3231,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="1060.5412421875008" Y="1229.3519371213126" Width="174.7988281249999" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 10}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="decision" stroke="{y:GraphMLReference 9}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
@@ -3242,92 +3241,92 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<port name="p5"/>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="11"/>
+					<y:GraphMLReference ResourceKey="10"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="12"/>
+					<y:GraphMLReference ResourceKey="11"/>
 				</data>
 			</port>
 			<port name="p9"/>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="13"/>
+					<y:GraphMLReference ResourceKey="12"/>
 				</data>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="14"/>
+					<y:GraphMLReference ResourceKey="13"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="15"/>
+					<y:GraphMLReference ResourceKey="14"/>
 				</data>
 			</port>
 			<port name="p13"/>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
+					<y:GraphMLReference ResourceKey="15"/>
 				</data>
 			</port>
 			<port name="p15"/>
 			<port name="p16">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
+					<y:GraphMLReference ResourceKey="16"/>
 				</data>
 			</port>
 			<port name="p17">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
+					<y:GraphMLReference ResourceKey="17"/>
 				</data>
 			</port>
 			<port name="p18">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="42"/>
+					<y:GraphMLReference ResourceKey="38"/>
 				</data>
 			</port>
 			<port name="p19"/>
 			<port name="p20">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="43"/>
+					<y:GraphMLReference ResourceKey="39"/>
 				</data>
 			</port>
 			<port name="p21"/>
 			<port name="p22">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="44"/>
+					<y:GraphMLReference ResourceKey="40"/>
 				</data>
 			</port>
 			<port name="p23">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="47"/>
+					<y:GraphMLReference ResourceKey="43"/>
 				</data>
 			</port>
 			<port name="p24"/>
 			<port name="p25">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="48"/>
+					<y:GraphMLReference ResourceKey="44"/>
 				</data>
 			</port>
 			<port name="p26"/>
 			<port name="p27">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="51"/>
+					<y:GraphMLReference ResourceKey="46"/>
 				</data>
 			</port>
 			<port name="p28"/>
 			<port name="p29">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="52"/>
+					<y:GraphMLReference ResourceKey="47"/>
 				</data>
 			</port>
 			<port name="p30"/>
 			<port name="p31">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="53"/>
+					<y:GraphMLReference ResourceKey="48"/>
 				</data>
 			</port>
 			<port name="p32">
@@ -3344,7 +3343,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 						<y:Label.Text><![CDATA[result[i][j] += m1[i][m1_cols - 1] 
 * m2[m1_cols - 1][j]]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3361,13 +3360,13 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<port name="p3"/>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
+					<y:GraphMLReference ResourceKey="41"/>
 				</data>
 			</port>
 			<port name="p5"/>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="46"/>
+					<y:GraphMLReference ResourceKey="42"/>
 				</data>
 			</port>
 			<port name="p7"/>
@@ -3381,7 +3380,7 @@ m1_rows на m2_cols]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Вернуть result]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 54}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 49}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3390,65 +3389,65 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="1067.9406562500008" Y="1519.9158087158453" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 55}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 50}" fill="{x:Null}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="56"/>
+					<y:GraphMLReference ResourceKey="51"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="57"/>
+					<y:GraphMLReference ResourceKey="52"/>
 				</data>
 			</port>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="58"/>
+					<y:GraphMLReference ResourceKey="53"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="59"/>
+					<y:GraphMLReference ResourceKey="54"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="60"/>
+					<y:GraphMLReference ResourceKey="55"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="61"/>
+					<y:GraphMLReference ResourceKey="56"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="62"/>
+					<y:GraphMLReference ResourceKey="57"/>
 				</data>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="77"/>
+					<y:GraphMLReference ResourceKey="72"/>
 				</data>
 			</port>
 			<port name="p10"/>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="78"/>
+					<y:GraphMLReference ResourceKey="73"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="79"/>
+					<y:GraphMLReference ResourceKey="74"/>
 				</data>
 			</port>
 			<port name="p13"/>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="80"/>
+					<y:GraphMLReference ResourceKey="75"/>
 				</data>
 			</port>
 			<port name="p15"/>
@@ -3457,10 +3456,10 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">129</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 81}">
+					<y:Label LayoutParameter="{y:GraphMLReference 76}">
 						<y:Label.Text>Конец</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 82}" autoFlip="false" textFill="{y:GraphMLReference 83}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 77}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3469,68 +3468,68 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="1211.1906562500005" Y="1620.1131851504233" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 84}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 78}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="85"/>
+					<y:GraphMLReference ResourceKey="79"/>
 				</data>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="86"/>
+					<y:GraphMLReference ResourceKey="80"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="87"/>
+					<y:GraphMLReference ResourceKey="81"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="88"/>
+					<y:GraphMLReference ResourceKey="82"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="89"/>
+					<y:GraphMLReference ResourceKey="83"/>
 				</data>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="90"/>
+					<y:GraphMLReference ResourceKey="84"/>
 				</data>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="91"/>
+					<y:GraphMLReference ResourceKey="85"/>
 				</data>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="92"/>
+					<y:GraphMLReference ResourceKey="86"/>
 				</data>
 			</port>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="93"/>
+					<y:GraphMLReference ResourceKey="87"/>
 				</data>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="94"/>
+					<y:GraphMLReference ResourceKey="88"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="95"/>
+					<y:GraphMLReference ResourceKey="89"/>
 				</data>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="96"/>
+					<y:GraphMLReference ResourceKey="90"/>
 				</data>
 			</port>
 		</node>
@@ -3538,10 +3537,10 @@ m1_rows на m2_cols]]></y:Label.Text>
 			<data key="d0">130</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 63}">
+					<y:Label LayoutParameter="{y:GraphMLReference 58}">
 						<y:Label.Text>Начало</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 50}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3550,14 +3549,14 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="-79.51134374999856" Y="1789.603828046509" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 64}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 59}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="65"/>
+					<y:GraphMLReference ResourceKey="60"/>
 				</data>
 			</port>
 			<port name="p4"/>
@@ -3577,9 +3576,9 @@ m1_rows на m2_cols]]></y:Label.Text>
 которые используются в умножении 
 матриц]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 66}">
+							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 61}">
 								<y:CompositeLabelModelParameter.Parameter>
-									<y:InteriorLabelModelParameter Position="East" Model="{y:GraphMLReference 32}"/>
+									<y:InteriorLabelModelParameter Position="East" Model="{y:GraphMLReference 30}"/>
 								</y:CompositeLabelModelParameter.Parameter>
 							</y:CompositeLabelModelParameter>
 						</y:Label.LayoutParameter>
@@ -3597,12 +3596,12 @@ m1_rows на m2_cols]]></y:Label.Text>
 				<y:RectD X="129.81465625000135" Y="1739.962218818809" Width="252.69165625000176" Height="149.28321845539972"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 19}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 18}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="20"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 		</node>
@@ -3698,7 +3697,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="22"/>
+					<y:GraphMLReference ResourceKey="21"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3742,7 +3741,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[i = 1 ... m1_rows]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3760,7 +3759,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3784,7 +3783,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3815,7 +3814,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="38"/>
+					<y:GraphMLReference ResourceKey="36"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3853,7 +3852,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="97"/>
+					<y:GraphMLReference ResourceKey="91"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3876,7 +3875,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[j = 0 ... m1_half_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 39}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3894,7 +3893,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3918,7 +3917,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3956,7 +3955,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="98"/>
+					<y:GraphMLReference ResourceKey="92"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -3972,7 +3971,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[mul_rows[i] += m1[i][j << 1] * m1[i][(j << 1) + 1]]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3997,7 +3996,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>j++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 40}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4015,7 +4014,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4032,7 +4031,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4042,7 +4041,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4052,7 +4051,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4062,7 +4061,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4107,7 +4106,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="67"/>
+					<y:GraphMLReference ResourceKey="62"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4117,7 +4116,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="68"/>
+					<y:GraphMLReference ResourceKey="63"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4154,7 +4153,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>i++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 41}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4172,7 +4171,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4189,7 +4188,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4199,7 +4198,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4209,7 +4208,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4219,7 +4218,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4264,7 +4263,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="69"/>
+					<y:GraphMLReference ResourceKey="64"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4274,7 +4273,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="70"/>
+					<y:GraphMLReference ResourceKey="65"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4284,7 +4283,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="99"/>
+					<y:GraphMLReference ResourceKey="93"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4307,7 +4306,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[j = 0 ... m1_half_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4325,7 +4324,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4349,7 +4348,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4380,7 +4379,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="38"/>
+					<y:GraphMLReference ResourceKey="36"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4390,7 +4389,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="71"/>
+					<y:GraphMLReference ResourceKey="66"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4423,7 +4422,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[mul_rows[0] += m1[0][j << 1] * m1[0][(j << 1) + 1]]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4440,7 +4439,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			<port name="p3"/>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
+					<y:GraphMLReference ResourceKey="41"/>
 				</data>
 			</port>
 			<port name="p5"/>
@@ -4453,7 +4452,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>j++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 50}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4471,7 +4470,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4488,7 +4487,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4498,7 +4497,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4508,7 +4507,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4518,7 +4517,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4549,7 +4548,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="72"/>
+					<y:GraphMLReference ResourceKey="67"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4559,7 +4558,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="73"/>
+					<y:GraphMLReference ResourceKey="68"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4569,7 +4568,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="74"/>
+					<y:GraphMLReference ResourceKey="69"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4579,7 +4578,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="75"/>
+					<y:GraphMLReference ResourceKey="70"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4589,7 +4588,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="76"/>
+					<y:GraphMLReference ResourceKey="71"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -4633,7 +4632,7 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Вернуть mul_rows]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 54}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 49}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4642,71 +4641,71 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 				<y:RectD X="-79.5113437499989" Y="2407.112806785577" Width="160" Height="36.75"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 55}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 50}" fill="{x:Null}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="56"/>
+					<y:GraphMLReference ResourceKey="51"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="57"/>
+					<y:GraphMLReference ResourceKey="52"/>
 				</data>
 			</port>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="58"/>
+					<y:GraphMLReference ResourceKey="53"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="59"/>
+					<y:GraphMLReference ResourceKey="54"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="60"/>
+					<y:GraphMLReference ResourceKey="55"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="61"/>
+					<y:GraphMLReference ResourceKey="56"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="62"/>
+					<y:GraphMLReference ResourceKey="57"/>
 				</data>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="77"/>
+					<y:GraphMLReference ResourceKey="72"/>
 				</data>
 			</port>
 			<port name="p10"/>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="78"/>
+					<y:GraphMLReference ResourceKey="73"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="79"/>
+					<y:GraphMLReference ResourceKey="74"/>
 				</data>
 			</port>
 			<port name="p13"/>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="80"/>
+					<y:GraphMLReference ResourceKey="75"/>
 				</data>
 			</port>
 			<port name="p15"/>
 			<port name="p16">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="100"/>
+					<y:GraphMLReference ResourceKey="94"/>
 				</data>
 			</port>
 			<port name="p17"/>
@@ -4715,10 +4714,10 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			<data key="d0">162</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 81}">
+					<y:Label LayoutParameter="{y:GraphMLReference 76}">
 						<y:Label.Text>Конец</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 82}" autoFlip="false" textFill="{y:GraphMLReference 83}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 77}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4727,73 +4726,73 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 				<y:RectD X="-79.5113437499989" Y="2460.4471258089634" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 84}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 78}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="85"/>
+					<y:GraphMLReference ResourceKey="79"/>
 				</data>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="86"/>
+					<y:GraphMLReference ResourceKey="80"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="87"/>
+					<y:GraphMLReference ResourceKey="81"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="88"/>
+					<y:GraphMLReference ResourceKey="82"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="89"/>
+					<y:GraphMLReference ResourceKey="83"/>
 				</data>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="90"/>
+					<y:GraphMLReference ResourceKey="84"/>
 				</data>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="91"/>
+					<y:GraphMLReference ResourceKey="85"/>
 				</data>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="92"/>
+					<y:GraphMLReference ResourceKey="86"/>
 				</data>
 			</port>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="93"/>
+					<y:GraphMLReference ResourceKey="87"/>
 				</data>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="94"/>
+					<y:GraphMLReference ResourceKey="88"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="95"/>
+					<y:GraphMLReference ResourceKey="89"/>
 				</data>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="96"/>
+					<y:GraphMLReference ResourceKey="90"/>
 				</data>
 			</port>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="101"/>
+					<y:GraphMLReference ResourceKey="95"/>
 				</data>
 			</port>
 		</node>
@@ -4801,10 +4800,10 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 			<data key="d0">163</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 63}">
+					<y:Label LayoutParameter="{y:GraphMLReference 58}">
 						<y:Label.Text>Начало</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 50}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4813,14 +4812,14 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 				<y:RectD X="399.5063125000031" Y="1788.19245959111" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 64}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 59}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="65"/>
+					<y:GraphMLReference ResourceKey="60"/>
 				</data>
 			</port>
 			<port name="p4"/>
@@ -4840,9 +4839,9 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 которые используются в умножении 
 матриц]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 66}">
+							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 61}">
 								<y:CompositeLabelModelParameter.Parameter>
-									<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 32}"/>
+									<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 30}"/>
 								</y:CompositeLabelModelParameter.Parameter>
 							</y:CompositeLabelModelParameter>
 						</y:Label.LayoutParameter>
@@ -4860,12 +4859,12 @@ m1_half_cols = длина(m1[0]) >> 1]]></y:Label.Text>
 				<y:RectD X="611.0950000000001" Y="1735.7565345911098" Width="256.69165625000176" Height="154.87185000000068"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 19}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="annotation" stroke="{y:GraphMLReference 18}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="20"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 		</node>
@@ -4961,7 +4960,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="22"/>
+					<y:GraphMLReference ResourceKey="21"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5005,7 +5004,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[i = 1 ... m2_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5023,7 +5022,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5047,7 +5046,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5078,7 +5077,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="38"/>
+					<y:GraphMLReference ResourceKey="36"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5116,7 +5115,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="97"/>
+					<y:GraphMLReference ResourceKey="91"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5139,7 +5138,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[j = 0 ... m2_half_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 39}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5157,7 +5156,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5181,7 +5180,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5219,7 +5218,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="98"/>
+					<y:GraphMLReference ResourceKey="92"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5235,7 +5234,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[mul_cols[i] += m2[j << 1][i] * m2[(j << 1) + 1][i]]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5260,7 +5259,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>j++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 40}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5278,7 +5277,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5295,7 +5294,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5305,7 +5304,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5315,7 +5314,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5325,7 +5324,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5370,7 +5369,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="67"/>
+					<y:GraphMLReference ResourceKey="62"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5380,7 +5379,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="68"/>
+					<y:GraphMLReference ResourceKey="63"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5417,7 +5416,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>i++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 41}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Arial" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5435,7 +5434,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5452,7 +5451,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5462,7 +5461,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5472,7 +5471,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5482,7 +5481,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5527,7 +5526,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="69"/>
+					<y:GraphMLReference ResourceKey="64"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5537,7 +5536,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="70"/>
+					<y:GraphMLReference ResourceKey="65"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5547,7 +5546,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="99"/>
+					<y:GraphMLReference ResourceKey="93"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5570,7 +5569,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[j = 0 ... m2_half_rows]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 24}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5588,7 +5587,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="25"/>
+					<y:GraphMLReference ResourceKey="23"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5612,7 +5611,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="26"/>
+					<y:GraphMLReference ResourceKey="24"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5643,7 +5642,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="38"/>
+					<y:GraphMLReference ResourceKey="36"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5653,7 +5652,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="71"/>
+					<y:GraphMLReference ResourceKey="66"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5686,7 +5685,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[mul_cols[0] += m2[j << 1][0] * m2[(j << 1) + 1][0]]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 23}" textFill="BLACK"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" font="{y:GraphMLReference 22}" textFill="BLACK"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5703,7 +5702,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			<port name="p3"/>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="45"/>
+					<y:GraphMLReference ResourceKey="41"/>
 				</data>
 			</port>
 			<port name="p5"/>
@@ -5716,7 +5715,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text>j++</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="{y:GraphMLReference 50}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" textWrappingShape="ROUND_RECTANGLE" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5734,7 +5733,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="27"/>
+					<y:GraphMLReference ResourceKey="25"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5751,7 +5750,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="28"/>
+					<y:GraphMLReference ResourceKey="26"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5761,7 +5760,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="29"/>
+					<y:GraphMLReference ResourceKey="27"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5771,7 +5770,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="30"/>
+					<y:GraphMLReference ResourceKey="28"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5781,7 +5780,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="31"/>
+					<y:GraphMLReference ResourceKey="29"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5812,7 +5811,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="72"/>
+					<y:GraphMLReference ResourceKey="67"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5822,7 +5821,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="73"/>
+					<y:GraphMLReference ResourceKey="68"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5832,7 +5831,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="74"/>
+					<y:GraphMLReference ResourceKey="69"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5842,7 +5841,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="75"/>
+					<y:GraphMLReference ResourceKey="70"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5852,7 +5851,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="76"/>
+					<y:GraphMLReference ResourceKey="71"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -5896,7 +5895,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[Вернуть mul_cols]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 54}" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 49}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5905,71 +5904,71 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				<y:RectD X="399.5063125000024" Y="2405.7014383301776" Width="160" Height="38.1613684553995"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 55}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="data" stroke="{y:GraphMLReference 50}" fill="{x:Null}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="56"/>
+					<y:GraphMLReference ResourceKey="51"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="57"/>
+					<y:GraphMLReference ResourceKey="52"/>
 				</data>
 			</port>
 			<port name="p2"/>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="58"/>
+					<y:GraphMLReference ResourceKey="53"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="59"/>
+					<y:GraphMLReference ResourceKey="54"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="60"/>
+					<y:GraphMLReference ResourceKey="55"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="61"/>
+					<y:GraphMLReference ResourceKey="56"/>
 				</data>
 			</port>
 			<port name="p7"/>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="62"/>
+					<y:GraphMLReference ResourceKey="57"/>
 				</data>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="77"/>
+					<y:GraphMLReference ResourceKey="72"/>
 				</data>
 			</port>
 			<port name="p10"/>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="78"/>
+					<y:GraphMLReference ResourceKey="73"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="79"/>
+					<y:GraphMLReference ResourceKey="74"/>
 				</data>
 			</port>
 			<port name="p13"/>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="80"/>
+					<y:GraphMLReference ResourceKey="75"/>
 				</data>
 			</port>
 			<port name="p15"/>
 			<port name="p16">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="100"/>
+					<y:GraphMLReference ResourceKey="94"/>
 				</data>
 			</port>
 			<port name="p17"/>
@@ -5978,10 +5977,10 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 			<data key="d0">176</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 81}">
+					<y:Label LayoutParameter="{y:GraphMLReference 76}">
 						<y:Label.Text>Конец</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 82}" autoFlip="false" textFill="{y:GraphMLReference 83}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 77}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -5990,89 +5989,89 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				<y:RectD X="399.5063125000024" Y="2460.4471258089634" Width="160" Height="50"/>
 			</data>
 			<data key="d7">
-				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 84}" fill="{x:Null}"/>
+				<demostyle:FlowchartNodeStyle type="terminator" stroke="{y:GraphMLReference 78}" fill="{x:Null}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="85"/>
+					<y:GraphMLReference ResourceKey="79"/>
 				</data>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="86"/>
+					<y:GraphMLReference ResourceKey="80"/>
 				</data>
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="87"/>
+					<y:GraphMLReference ResourceKey="81"/>
 				</data>
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="88"/>
+					<y:GraphMLReference ResourceKey="82"/>
 				</data>
 			</port>
 			<port name="p6">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="89"/>
+					<y:GraphMLReference ResourceKey="83"/>
 				</data>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="90"/>
+					<y:GraphMLReference ResourceKey="84"/>
 				</data>
 			</port>
 			<port name="p8">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="91"/>
+					<y:GraphMLReference ResourceKey="85"/>
 				</data>
 			</port>
 			<port name="p9">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="92"/>
+					<y:GraphMLReference ResourceKey="86"/>
 				</data>
 			</port>
 			<port name="p10">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="93"/>
+					<y:GraphMLReference ResourceKey="87"/>
 				</data>
 			</port>
 			<port name="p11">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="94"/>
+					<y:GraphMLReference ResourceKey="88"/>
 				</data>
 			</port>
 			<port name="p12">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="95"/>
+					<y:GraphMLReference ResourceKey="89"/>
 				</data>
 			</port>
 			<port name="p13">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="96"/>
+					<y:GraphMLReference ResourceKey="90"/>
 				</data>
 			</port>
 			<port name="p14">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="101"/>
+					<y:GraphMLReference ResourceKey="95"/>
 				</data>
 			</port>
 		</node>
 		<edge id="e0" source="n0" target="n1" sourceport="p0" targetport="p1">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 105}" targetArrow="{y:GraphMLReference 102}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 99}" targetArrow="{y:GraphMLReference 96}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e1" source="n0" target="n2" sourceport="p4" targetport="p8">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e2" source="n2" target="n4" sourceport="p10" targetport="p18">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="104"/>
+				<y:GraphMLReference ResourceKey="98"/>
 			</data>
 		</edge>
 		<edge id="e3" source="n4" target="n3" sourceport="p20" targetport="p12">
@@ -6082,17 +6081,17 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="104"/>
+				<y:GraphMLReference ResourceKey="98"/>
 			</data>
 		</edge>
 		<edge id="e4" source="n3" target="n5" sourceport="p14" targetport="p19">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="104"/>
+				<y:GraphMLReference ResourceKey="98"/>
 			</data>
 		</edge>
 		<edge id="e5" source="n7" target="n8" sourceport="p0" targetport="p2">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 105}" targetArrow="{y:GraphMLReference 102}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 99}" targetArrow="{y:GraphMLReference 96}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e6" source="n5" target="n7" sourceport="p21" targetport="p1">
@@ -6102,7 +6101,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="107"/>
+				<y:GraphMLReference ResourceKey="101"/>
 			</data>
 		</edge>
 		<edge id="e7" source="n4" target="n21" sourceport="p22" targetport="p2">
@@ -6111,10 +6110,10 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label>
 						<y:Label.Text>Да</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 108}" SegmentRatio="0.5598484533077986" Distance="-5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 102}" SegmentRatio="0.5598484533077986" Distance="-5"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -6125,7 +6124,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="107"/>
+				<y:GraphMLReference ResourceKey="101"/>
 			</data>
 		</edge>
 		<edge id="e8" source="n5" target="n21" sourceport="p24" targetport="p1">
@@ -6134,10 +6133,10 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label>
 						<y:Label.Text>Да</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 108}" SegmentRatio="0.44186664517323976" Distance="-5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 102}" SegmentRatio="0.44186664517323976" Distance="-5"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -6148,107 +6147,107 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="107"/>
+				<y:GraphMLReference ResourceKey="101"/>
 			</data>
 		</edge>
 		<edge id="e9" source="n13" target="n14" sourceport="p5" targetport="p4">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e10" source="n15" target="n16" sourceport="p7" targetport="p6">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e11" source="n23" target="n6" sourceport="p3" targetport="p13">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="113"/>
+				<y:GraphMLReference ResourceKey="107"/>
 			</data>
 		</edge>
 		<edge id="e12" source="n14" target="n19" sourceport="p7" targetport="p2">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e13" source="n19" target="n17" sourceport="p3" targetport="p6">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e14" source="n17" target="n20" sourceport="p7" targetport="p2">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e15" source="n20" target="n18" sourceport="p3" targetport="p9">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e16" source="n18" target="n43" sourceport="p10" targetport="p32">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e17" source="n7" target="n10" sourceport="p3" targetport="p3">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e18" source="n10" target="n11" sourceport="p4" targetport="p5">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e19" source="n10" target="n24" sourceport="p5" targetport="p2">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 105}" targetArrow="{y:GraphMLReference 102}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 99}" targetArrow="{y:GraphMLReference 96}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e20" source="n11" target="n25" sourceport="p6" targetport="p2">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 105}" targetArrow="{y:GraphMLReference 102}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 99}" targetArrow="{y:GraphMLReference 96}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e21" source="n11" target="n26" sourceport="p7" targetport="p4">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e22" source="n26" target="n27" sourceport="p5" targetport="p4">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e23" source="n27" target="n41" sourceport="p6" targetport="p7">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e24" source="n31" target="n32" sourceport="p6" targetport="p2">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="112"/>
+				<y:GraphMLReference ResourceKey="106"/>
 			</data>
 		</edge>
 		<edge id="e25" source="n34" target="n35" sourceport="p8" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="112"/>
+				<y:GraphMLReference ResourceKey="106"/>
 			</data>
 		</edge>
 		<edge id="e26" source="n29" target="n9" sourceport="p1" targetport="p8">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e27" source="n9" target="n12" sourceport="p9" targetport="p4">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e28" source="n12" target="n42" sourceport="p6" targetport="p15">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e29" source="n36" target="n37" sourceport="p25" targetport="p6">
@@ -6257,10 +6256,10 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label>
 						<y:Label.Text>Да</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 114}" SegmentRatio="0.6303837551761537" Distance="-5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 108}" SegmentRatio="0.6303837551761537" Distance="-5"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 115}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -6271,22 +6270,22 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="113"/>
+				<y:GraphMLReference ResourceKey="107"/>
 			</data>
 		</edge>
 		<edge id="e30" source="n30" target="n38" sourceport="p9" targetport="p8">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e31" source="n38" target="n31" sourceport="p9" targetport="p7">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e32" source="n22" target="n13" sourceport="p2" targetport="p8">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e33" source="n39" target="n40" sourceport="p25" targetport="p6">
@@ -6295,10 +6294,10 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label>
 						<y:Label.Text>Да</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 114}" SegmentRatio="0.6303837551761537" Distance="-5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 108}" SegmentRatio="0.6303837551761537" Distance="-5"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 115}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -6309,7 +6308,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 109}" targetArrow="{y:GraphMLReference 110}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}" targetArrow="{y:GraphMLReference 104}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e34" source="n40" target="n34" sourceport="p9" targetport="p9">
@@ -6320,7 +6319,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e35" source="n39" target="n34" sourceport="p30" targetport="p10">
@@ -6332,27 +6331,27 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="113"/>
+				<y:GraphMLReference ResourceKey="107"/>
 			</data>
 		</edge>
 		<edge id="e36" source="n32" target="n33" sourceport="p5" targetport="p13">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e37" source="n33" target="n39" sourceport="p14" targetport="p31">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e38" source="n41" target="n28" sourceport="p8" targetport="p4">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e39" source="n42" target="n36" sourceport="p16" targetport="p27">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e40" source="n36" target="n30" sourceport="p28" targetport="p10">
@@ -6365,7 +6364,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="113"/>
+				<y:GraphMLReference ResourceKey="107"/>
 			</data>
 		</edge>
 		<edge id="e41" source="n37" target="n30" sourceport="p8" targetport="p11">
@@ -6376,7 +6375,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e42" source="n43" target="n44" sourceport="p25" targetport="p6">
@@ -6385,10 +6384,10 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 					<y:Label>
 						<y:Label.Text>Да</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 114}" SegmentRatio="0.6303837551761537" Distance="-5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 108}" SegmentRatio="0.6303837551761537" Distance="-5"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 115}" autoFlip="false" textFill="{y:GraphMLReference 21}" textSize="10"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 20}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -6399,7 +6398,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 109}" targetArrow="{y:GraphMLReference 110}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}" targetArrow="{y:GraphMLReference 104}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e43" source="n44" target="n15" sourceport="p9" targetport="p11">
@@ -6410,7 +6409,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e44" source="n43" target="n15" sourceport="p30" targetport="p10">
@@ -6422,12 +6421,12 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 109}" targetArrow="{y:GraphMLReference 110}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}" targetArrow="{y:GraphMLReference 104}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e45" source="n16" target="n45" sourceport="p10" targetport="p14">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e46" source="n45" target="n46" sourceport="p15" targetport="p12">
@@ -6438,7 +6437,7 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e47" source="n6" target="n46" sourceport="p15" targetport="p13">
@@ -6450,137 +6449,137 @@ m2_half_rows = длина(m2[0]) >> 1]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e48" source="n47" target="n48" sourceport="p0" targetport="p1">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 105}" targetArrow="{y:GraphMLReference 102}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 99}" targetArrow="{y:GraphMLReference 96}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e49" source="n47" target="n49" sourceport="p4" targetport="p8">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e50" source="n49" target="n50" sourceport="p10" targetport="p4">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e51" source="n52" target="n53" sourceport="p6" targetport="p2">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e52" source="n53" target="n54" sourceport="p5" targetport="p13">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e53" source="n56" target="n57" sourceport="p9" targetport="p4">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="116"/>
+				<y:GraphMLReference ResourceKey="109"/>
 			</data>
 		</edge>
 		<edge id="e54" source="n57" target="n58" sourceport="p6" targetport="p15">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="116"/>
+				<y:GraphMLReference ResourceKey="109"/>
 			</data>
 		</edge>
 		<edge id="e55" source="n58" target="n51" sourceport="p17" targetport="p12">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e56" source="n51" target="n52" sourceport="p13" targetport="p8">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e57" source="n54" target="n55" sourceport="p15" targetport="p13">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e58" source="n55" target="n59" sourceport="p14" targetport="p16">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e59" source="n59" target="n60" sourceport="p17" targetport="p14">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e60" source="n61" target="n62" sourceport="p0" targetport="p1">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 105}" targetArrow="{y:GraphMLReference 102}" sourceArrow="{y:GraphMLReference 102}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 99}" targetArrow="{y:GraphMLReference 96}" sourceArrow="{y:GraphMLReference 96}"/>
 			</data>
 		</edge>
 		<edge id="e61" source="n61" target="n63" sourceport="p4" targetport="p8">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e62" source="n63" target="n64" sourceport="p10" targetport="p4">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e63" source="n66" target="n67" sourceport="p6" targetport="p2">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e64" source="n67" target="n68" sourceport="p5" targetport="p13">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 103}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 97}"/>
 			</data>
 		</edge>
 		<edge id="e65" source="n70" target="n71" sourceport="p9" targetport="p4">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="117"/>
+				<y:GraphMLReference ResourceKey="110"/>
 			</data>
 		</edge>
 		<edge id="e66" source="n71" target="n72" sourceport="p6" targetport="p15">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="117"/>
+				<y:GraphMLReference ResourceKey="110"/>
 			</data>
 		</edge>
 		<edge id="e67" source="n72" target="n65" sourceport="p17" targetport="p12">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="118"/>
+				<y:GraphMLReference ResourceKey="111"/>
 			</data>
 		</edge>
 		<edge id="e68" source="n65" target="n66" sourceport="p13" targetport="p8">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="118"/>
+				<y:GraphMLReference ResourceKey="111"/>
 			</data>
 		</edge>
 		<edge id="e69" source="n68" target="n69" sourceport="p15" targetport="p13">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="118"/>
+				<y:GraphMLReference ResourceKey="111"/>
 			</data>
 		</edge>
 		<edge id="e70" source="n69" target="n73" sourceport="p14" targetport="p16">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="118"/>
+				<y:GraphMLReference ResourceKey="111"/>
 			</data>
 		</edge>
 		<edge id="e71" source="n73" target="n74" sourceport="p17" targetport="p14">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="118"/>
+				<y:GraphMLReference ResourceKey="111"/>
 			</data>
 		</edge>
 		<edge id="e72" source="n50" target="n56" sourceport="p5" targetport="p10">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 		<edge id="e73" source="n64" target="n70" sourceport="p5" targetport="p10">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="111"/>
+				<y:GraphMLReference ResourceKey="105"/>
 			</data>
 		</edge>
 	</graph>
