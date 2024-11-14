@@ -1,9 +1,9 @@
 .PHONY: test report_prev
-.DEFAULT: report_stdout
+.DEFAULT: unit
 
 TEST_DIR := test
 
-report_stdout: 
+unit: 
 	python3 ./unit.py
 
 report-prev: $(TEST_DIR)

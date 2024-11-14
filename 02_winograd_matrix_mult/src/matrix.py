@@ -8,7 +8,7 @@ def standard_mult(m1: list[list[int]], m2: list[list[int]]) -> list[list[int]]:
     if m1_rows < 1 or m2_rows < 1:
         return None
     m1_cols, m2_cols = len(m1[0]), len(m2[0])
-    if m1_cols != m2_rows:
+    if m1_cols < 1 or m2_cols < 1 or m1_cols != m2_rows:
         return None
     
     result = create_matrix(m1_rows, m2_cols)
@@ -25,7 +25,7 @@ def winograd_mult(m1: list[list[int]], m2: list[list[int]]) -> list[list[int]]:
     if m1_rows < 1 or m2_rows < 1:
         return None
     m1_cols, m2_cols = len(m1[0]), len(m2[0])
-    if m1_cols != m2_rows:
+    if m1_cols < 1 or m2_cols < 1 or m1_cols != m2_rows:
         return None
     
     result = create_matrix(m1_rows, m2_cols)
@@ -58,7 +58,7 @@ def winograd_optimized_mult(m1: list[list[int]], m2: list[list[int]]) -> list[li
     if m1_rows < 1 or m2_rows < 1:
         return None
     m1_cols, m2_cols = len(m1[0]), len(m2[0])
-    if m1_cols != m2_rows:
+    if m1_cols < 1 or m2_cols < 1 or m1_cols != m2_rows:
         return None
     
     result = create_matrix(m1_rows, m2_cols)
