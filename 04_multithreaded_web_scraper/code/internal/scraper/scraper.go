@@ -1,10 +1,10 @@
-package scrapper
+package scraper
 
 import (
+	"bytes"
 	"errors"
 	"fmt"
 	"io"
-	"log/slog"
 	"net/http"
 	"net/url"
 	"os"
@@ -12,8 +12,9 @@ import (
 	"regexp"
 	"strings"
 	"sync"
+	"time"
 
-	"github.com/hahaclassic/algorithm-analysis/04_multithreaded_web_scrapper/code/pkg/collection"
+	"github.com/hahaclassic/algorithm-analysis/04_multithreaded_web_scraper/code/pkg/collection"
 	"golang.org/x/net/html"
 )
 
@@ -25,7 +26,7 @@ var (
 )
 
 type Scraper struct {
-	// countSaved atomic.Int32
+	client    *http.Client
 	visited   *collection.Collection[string]
 	unvisited *collection.Collection[string]
 }
@@ -37,18 +38,26 @@ func New() *Scraper {
 	}
 }
 
-func (s *Scraper) Start(baseURL, dirPath string, maxWorkers, maxPages int) {
-	inputParams(baseURL, dirPath, maxWorkers, maxPages)
+func (s *Scraper) Start(baseURL, dirPath string, maxWorkers, maxPages int) int {
+	s.unvisited.Clear()
+	s.visited.Clear()
+
+	s.client = &http.Client{
+		Transport: &http.Transport{
+			MaxIdleConns:        maxWorkers,
+			MaxIdleConnsPerHost: maxWorkers,
+			IdleConnTimeout:     30 * time.Second,
+		},
+	}
 
 	err := createDir(dirPath)
 	if err != nil {
-		slog.Error("[Start]", "err", err)
-		return
+		return 0
 	}
 
 	s.start(baseURL, dirPath, maxWorkers, maxPages)
 
-	results(s.visited.Len())
+	return s.visited.Len()
 }
 
 func (s *Scraper) start(baseURL, dirPath string, maxWorkers, maxPages int) {
@@ -84,26 +93,18 @@ func (s *Scraper) scrapePage(dirPath string, maxPages int, link string) {
 	}
 	s.visited.Store(link)
 
-	const msg = "[Scrape]"
-
-	body, err := loadPage(link)
+	body, err := s.loadPage(link)
 	if err != nil {
-		slog.Error(msg, "err", err)
 		return
 	}
 
 	savePath := getSavePath(dirPath, link)
-	err = savePage(savePath, strings.NewReader(string(body)))
+	err = savePage(savePath, bytes.NewReader(body))
 	if err != nil {
-		slog.Error(msg, "err", err)
 		return
 	}
-	// s.countSaved.Add(1)
 
-	err = s.extractURLs(link, strings.NewReader(string(body)))
-	if err != nil {
-		slog.Error(msg, "err", err)
-	}
+	_ = s.extractURLs(link, bytes.NewReader(body))
 }
 
 func (s *Scraper) extractURLs(baseLink string, body io.Reader) (err error) {
@@ -149,14 +150,14 @@ func (s *Scraper) extractURLs(baseLink string, body io.Reader) (err error) {
 	return nil
 }
 
-func loadPage(link string) (_ []byte, err error) {
+func (s *Scraper) loadPage(link string) (_ []byte, err error) {
 	defer func() {
 		if err != nil {
 			err = fmt.Errorf("[link=%s] %w: %w", link, ErrLoadPage, err)
 		}
 	}()
 
-	resp, err := http.Get(link)
+	resp, err := s.client.Get(link)
 	if err != nil {
 		return nil, err
 	}
@@ -176,21 +177,18 @@ func loadPage(link string) (_ []byte, err error) {
 func savePage(savePath string, body io.Reader) (err error) {
 	defer func() {
 		if err != nil {
-			err = fmt.Errorf("%w: %w", ErrLoadPage, err)
+			err = fmt.Errorf("%w: %w", ErrSavePage, err)
 		}
 	}()
 
-	rawBody, err := io.ReadAll(body)
+	outFile, err := os.Create(savePath)
 	if err != nil {
 		return err
 	}
+	defer outFile.Close()
 
-	err = os.WriteFile(savePath, rawBody, 0644)
-	if err != nil {
-		return err
-	}
-
-	return nil
+	_, err = io.Copy(outFile, body)
+	return err
 }
 
 func getSavePath(dirPath string, link string) string {
@@ -213,4 +211,13 @@ func getSavePath(dirPath string, link string) string {
 	}
 
 	return filepath.Join(dirPath, fileName)
+}
+
+func createDir(dirPath string) error {
+	err := os.MkdirAll(dirPath, 0755)
+	if err != nil && !os.IsExist(err) {
+		return fmt.Errorf("%w: %w", ErrCreateDir, err)
+	}
+
+	return nil
 }

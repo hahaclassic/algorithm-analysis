@@ -1,4 +1,4 @@
-module github.com/hahaclassic/algorithm-analysis/04_multithreaded_web_scrapper/code
+module github.com/hahaclassic/algorithm-analysis/04_multithreaded_web_scraper/code
 
 go 1.23.0
 
