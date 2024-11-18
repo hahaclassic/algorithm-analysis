@@ -1,0 +1,18 @@
+browser: "chrome" 
+
+sessions:
+  lab1:
+    link: "https://ru.overleaf.com/project/67387f493e7595da1c0f8e73"  
+    path: '../01_levenshtein/'  
+
+  lab2:
+    link: "https://ru.overleaf.com/project/673460fce5518f2c099fe8a7"
+    path: '../02_winograd_matrix_mult/'
+
+  lab3:
+    link: "https://ru.overleaf.com/project/672b5905c8ad112dcac8f754"
+    path: '../03_search_analysis/'
+
+  lab4:
+    link: "https://ru.overleaf.com/project/673b7240d20b5ce8e71637c2"
+    path: '../04_multithreaded_web_scraper/'
