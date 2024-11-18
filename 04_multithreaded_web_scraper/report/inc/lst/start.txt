@@ -1,0 +1,10 @@
+$ go run ./cmd/main.go -workers=10 -pages=10 -url=https://edimdoma.ru -dir=../data 
+
+[PARAMETERS] 
+- baseURL: https://edimdoma.ru 
+- dirPath: ../data 
+- maxPages: 10
+- maxWorkers 10
+
+[RESULT] 
+- visited: 10
