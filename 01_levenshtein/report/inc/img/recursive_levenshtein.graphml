@@ -104,7 +104,7 @@
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
 						<y:Label.Text><![CDATA[Расстояние Левенштейна: ЛевРек(S1[1...n], S2[1...m])
 Вход: строки S1 и S2.
-Выход: число - расстояние Левенштейна ]]></y:Label.Text>
+Выход: число (расстояние Левенштейна)]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" textFill="BLACK" textSize="11">
 								<yjs:DefaultLabelStyle.font>
@@ -128,9 +128,7 @@
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[n == 0
-или
-m == 0]]></y:Label.Text>
+						<y:Label.Text><![CDATA[n = 0 или m = 0]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="DIAMOND" textFill="BLACK">
 								<yjs:DefaultLabelStyle.font>
@@ -170,7 +168,7 @@ m == 0]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
-						<y:Label.Text><![CDATA[S1[n-1] == S2[m-1]]]></y:Label.Text>
+						<y:Label.Text><![CDATA[S1[n-1] = S2[m-1]]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Arial" autoFlip="false" textFill="#FF000000" textSize="10"/>
 						</y:Label.Style>
@@ -344,7 +342,7 @@ m = длина(S2)]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
-						<y:Label.Text><![CDATA[Вернуть |n - m|]]></y:Label.Text>
+						<y:Label.Text><![CDATA[Вернуть |n-m|]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" clipText="false" textWrappingShape="SHEARED_RECTANGLE" textFill="BLACK">
 								<yjs:DefaultLabelStyle.font>

@@ -147,7 +147,7 @@
 Вход: строки S1 и S2. Для memo указано значение
 по умолчанию, нет необходимости указывать 
 при вызове функции.
-Выход: число - расстояние Левенштейна ]]></y:Label.Text>
+Выход: число (расстояние Левенштейна)]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" clipText="false" textWrappingShape="LABEL_SHAPE" textFill="BLACK" textSize="11">
 								<yjs:DefaultLabelStyle.font>
@@ -330,7 +330,7 @@ m == 0]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
-						<y:Label.Text><![CDATA[Вернуть |n - m|]]></y:Label.Text>
+						<y:Label.Text><![CDATA[Вернуть |n-m|]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="{y:GraphMLReference 12}" textSize="10"/>
 						</y:Label.Style>

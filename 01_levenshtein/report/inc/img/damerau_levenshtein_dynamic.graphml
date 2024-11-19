@@ -482,7 +482,7 @@ m == 0]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
-						<y:Label.Text><![CDATA[Вернуть |n - m|]]></y:Label.Text>
+						<y:Label.Text><![CDATA[Вернуть |n-m|]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Roboto" autoFlip="false" textFill="#FF000000" textSize="10"/>
 						</y:Label.Style>
@@ -659,9 +659,9 @@ REPLACE_COST = 1]]></y:Label.Text>
 				<x:List>
 					<y:Label LayoutParameter="{x:Static y:InteriorStretchLabelModel.Center}">
 						<y:Label.Text><![CDATA[matrix[i][j] = min(
-matrix[i - 1][j] + DELETE_COST, 
-matrix[i][j - 1] + INSERT_COST,
-matrix[i - 1][j - 1] + cost)]]></y:Label.Text>
+matrix[i-1][j] + DELETE_COST, 
+matrix[i][j-1] + INSERT_COST,
+matrix[i-1][j-1] + cost)]]></y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="Arial" autoFlip="false" textFill="#FF000000" textSize="10"/>
 						</y:Label.Style>
@@ -754,8 +754,8 @@ INSERT_COST = 1]]></y:Label.Text>
 						<y:Label.Text><![CDATA[Расстояние Дамерау-Левенштейна: 
 ДамЛевДин(S1[1..n], S2[1..m])
 Вход: строки S1 и S2.
-Выход: число - расстояние 
-Дамерау-Левенштейна ]]></y:Label.Text>
+Выход: число (расстояние 
+Дамерау-Левенштейна)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:RatioAnchoredLabelModelParameter LayoutOffset="4,4.623535156249986"/>
 						</y:Label.LayoutParameter>
