@@ -1,11 +1,11 @@
-lab1-load:
+lab1:
 	python3 tex-hooker/main.py --tag=lab1
 
-lab2-load:
+lab2:
 	python3 tex-hooker/main.py --tag=lab2
 
-lab3-load:
+lab3:
 	python3 tex-hooker/main.py --tag=lab3
 
-lab4-load:
+lab4:
 	python3 tex-hooker/main.py --tag=lab4
