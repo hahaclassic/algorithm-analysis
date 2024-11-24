@@ -10,7 +10,7 @@ sessions:
     path: '../02_winograd_matrix_mult/'
 
   lab3:
-    link: "https://ru.overleaf.com/project/672b5905c8ad112dcac8f754"
+    link: "https://ru.overleaf.com/project/674352c2b480571e3ebe7564"
     path: '../03_search_analysis/'
 
   lab4:

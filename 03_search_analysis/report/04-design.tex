@@ -1,11 +1,11 @@
-\section{Конструкторская часть}
+\chapter{Конструкторский раздел}
 
 В данном разделе будут приведены требования к входным, выходным параметрам и представлены схемы для алгоритмов линейного и бинарного поиска.
 
-\subsection{Требования к входным и выходным параметрам}
+\section{Требования к входным и выходным параметрам}
 
 Требования к входным и выходным параметрам:
-\begin{itemize}
+\begin{itemize}[label=--]
     \item в качестве входных параметров алгоритм принимает массив и искомое значение;
     \item пустой массив является корректным входным значением;
     \item для бинарного поиска массив должен быть отсортирован;
@@ -13,20 +13,25 @@
     \item если искомое значение не найдено, в качестве индекса возвращается $-1$.
 \end{itemize}
 
-\subsection{Схемы алгоритмов}
+\section{Линейный поиск}
 
-На рисунках~\ref{fig:linear_search}~и~\ref{fig:binary_search} представлены схемы алгоритмов линейного и бинарного поиска соответственно.
+На рисунке~\ref{fig:linear_search} представлена схема алгоритма линейного поиска.
+
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=\textwidth]{img/linear_search.pdf}
+\includegraphics[width=\textwidth]{inc/img/linear_search.pdf}
 \caption{Схема алгоритма линейного поиска}
 \label{fig:linear_search}
 \end{figure}
 
+\section{Бинарный поиск}
+
+На рисунке~\ref{fig:binary_search} представлена схема алгоритма бинарного поиска.
+
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=\textwidth]{img/binary_search.pdf}
+\includegraphics[width=\textwidth]{inc/img/binary_search.pdf}
 \caption{Схема алгоритма бинарного поиска}
 \label{fig:binary_search}
 \end{figure}

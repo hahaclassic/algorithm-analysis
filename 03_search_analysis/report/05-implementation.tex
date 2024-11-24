@@ -1,61 +1,31 @@
-\section{Технологическая часть}
+\chapter{Технологический раздел}
 
 В данном разделе будет представлена реализация алгоритмов линейного и бинарного поиска. Также будут указаны средства реализации и результаты тестирования.
 
-\subsection{Средства реализации}
+\section{Средства реализации}
 
 Для реализации был выбран язык программирования $Python$~\cite{python}. Выбор обусловлен наличием библиотеки $matplotlib$~\cite{matplotlib}. Для построения гистограмм использовалась функция $bar$~\cite{bar}. 
 
-\subsection{Реализация алгоритмов}
+\section{Реализация алгоритмов}
 
-В листингах~\ref{lst:linear}~---~\ref{lst:binary} представлены реализации алгоритмов линейного и бинарного поиска.
+В листингах~\ref{lst:linear.py}~---~\ref{lst:binary.py} представлены реализации алгоритмов линейного и бинарного поиска.
 
-\begin{listing}[H]
-\caption{Реализация алгоритма линейного поиска}
-\label{lst:linear}
-\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
-def linearSearch(arr: list[int], elem: int) -> tuple[int, int]:
-    idx, comparisons = -1, 0
+\includelisting
+{linear.py}
+{Реализация алгоритма линейного поиска}
 
-    for i in range(len(arr)):
-        comparisons += 1
-        if arr[i] == elem:
-            idx = i
-            break
-    
-    return idx, comparisons
-\end{minted}
-\end{listing}
+\clearpage
 
-\begin{listing}[H]
-\caption{Реализация алгоритма бинарного поиска}
-\label{lst:binary}
-\begin{minted}[frame=single,fontsize = \footnotesize, linenos, xleftmargin = 1.5em]{python}
-def binarySearch(arr: list[int], elem: int) -> tuple[int, int]:
-    idx, comparisons = -1, 0
-    left, right = 0, len(arr) - 1
+\includelisting
+{binary.py}
+{Реализация алгоритма бинарного поиска}
 
-    while left <= right:
-        comparisons += 1
-        mid = (left + right) // 2            
-        if arr[mid] == elem:
-            idx = mid
-            break
-        elif arr[mid] < elem:
-            left = mid + 1
-        else:
-            right = mid - 1
-
-    return idx, comparisons
-\end{minted}
-\end{listing}
-
-\subsection{Тестирование}
+\section{Тестирование}
 
 В таблице~\ref{table:tests} представлены тесты для алгоритмов линейного и бинарного поиска. Тестирование проводилось по методологии чёрного ящика. В качестве входных данных использовались массивы из таблицы~\ref{table:arrays}. Все тесты пройдены успешно.
 
 \begin{table}[H]
-\caption{\centering Входные массивы для тестирования алгоритмов}
+\caption{Входные массивы для тестирования алгоритмов}
 \small
 \centering\begin{tabular}{|c|m{10cm}|}
         \hline
@@ -72,7 +42,7 @@ def binarySearch(arr: list[int], elem: int) -> tuple[int, int]:
 \end{table}
 
 \begin{table}[H]
-\caption{\centering Тесты для алгоритмов линейного и бинарного поиска}
+\caption{Тесты для алгоритмов линейного и бинарного поиска}
 \small
 \centering\begin{tabular}{|c|c|m{5cm}|c|c|}
         \hline
