@@ -65,29 +65,29 @@ def winograd_optimized_mult(m1: list[list[int]], m2: list[list[int]]) -> list[li
     mul_rows, mul_cols = create_precomp_row_opt(m1), create_precomp_column_opt(m2)
 
     m1_half_cols = m1_cols >> 1
-    is_odd = (m1_cols & 1 == 1)
 
     result[0][0] -= mul_rows[0] + mul_cols[0]
     for k in range(m1_half_cols):
         result[0][0] += (m1[0][k << 1] + m2[(k << 1) + 1][0]) \
             * (m1[0][(k << 1) + 1] + m2[k << 1][0])
-    if is_odd:
-        result[0][0] += m1[0][m1_cols - 1] * m2[m1_cols - 1][0]
         
     for j in range(1, m2_cols):
         result[0][j] -= mul_rows[0] + mul_cols[j]
         for k in range(m1_half_cols):
             result[0][j] += (m1[0][k << 1] + m2[(k << 1) + 1][j]) \
                 * (m1[0][(k << 1) + 1] + m2[k << 1][j])
-        if is_odd:
-            result[0][j] += m1[0][m1_cols - 1] * m2[m1_cols - 1][j]
     for i in range(1, m1_rows):
         for j in range(m2_cols):
             result[i][j] -= mul_rows[i] + mul_cols[j]
             for k in range(m1_half_cols):
                 result[i][j] += (m1[i][k << 1] + m2[(k << 1) + 1][j]) \
                     * (m1[i][(k << 1) + 1] + m2[k << 1][j])
-            if is_odd:
+    
+    if m1_cols % 2 == 1:
+        for j in range(m2_cols):
+                result[0][j] += m1[0][m1_cols - 1] * m2[m1_cols - 1][j]
+        for i in range(1, m1_rows):
+            for j in range(m2_cols):
                 result[i][j] += m1[i][m1_cols - 1] * m2[m1_cols - 1][j]
 
     return result
