@@ -6,7 +6,7 @@ sessions:
     path: '../01_levenshtein/'  
 
   lab2:
-    link: "https://ru.overleaf.com/project/673460fce5518f2c099fe8a7"
+    link: "https://ru.overleaf.com/project/674377959f884e432773d7df"
     path: '../02_winograd_matrix_mult/'
 
   lab3:
