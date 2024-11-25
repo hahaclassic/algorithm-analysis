@@ -1,0 +1,2 @@
+def create_matrix(rows: int, cols: int) -> list[list[int]]:
+    return [[0] * cols for _ in range(rows)]

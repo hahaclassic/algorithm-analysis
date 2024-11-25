@@ -1,0 +1,53 @@
+\chapter{Аналитический раздел}
+
+В данном разделе будут рассмотрены классический алгоритм умножения матриц и алгоритм Винограда.
+
+Матрицы $A$ и $B$ могут быть перемножены, если они совместимы (число столбцов $A$ равно числу строк $B$)~\cite{kormen}.
+
+\section{Классический алгоритм умножения}
+
+Если $A = (a_{ij})$ --- матрица размером $m \times n$, а $B = (b_{ij})$ — матрица размером $n \times p$, то их произведение $C = AB$ представляет собой матрицу $C = (c_{ij})$ размером $m × p$. В классическом алгоритме умножения матриц элементы матрицы $C$ определяются уравнением
+
+\begin{equation}
+    \label{eq:classic_mult}
+    c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj} 
+\end{equation}
+
+для $i = \overline{1, m}$, $j = \overline{1, p}$ и $k = \overline{1, n}$~\cite{kormen}.
+
+\section{Алгоритм Винограда}
+
+Пусть $n = 4$, и пусть в матрице $A$ $n$ столбцов, а в матрице $B$ $n$ строк. Тогда элемент $c_{ij}$ может быть вычислен по формуле~(\ref{eq:classic_for_n4}).
+
+\begin{equation}
+    \label{eq:classic_for_n4}
+    c_{ij} = a_{i1} b_{1j} + a_{i2} b_{2j} + a_{i3} b_{3j} + a_{i4} b_{4j}
+\end{equation}
+
+Формулу~(\ref{eq:classic_for_n4}) можно заменить на эквивалентное выражение~(\ref{eq:winograd_for_n4}).
+
+\begin{equation}
+    \label{eq:winograd_for_n4}
+    c_{ij} = (a_{i1} + b_{2j})(a_{i2} + b_{1j}) + (a_{i3} + b_{4j})(a_{i4} + b_{3j}) - a_{i1}a_{i2} - a_{i3}a_{i4} - b_{j1}b_{j2} - b_{j3}b_{j4}
+\end{equation}
+
+Попарные умножения элементов в~(\ref{eq:winograd_for_n4}) могут быть предварительно вычислены по формулам~(\ref{eq:mul_row})~---~(\ref{eq:mul_col}).
+
+\begin{equation}
+    \label{eq:mul_row}
+    E_i = \sum_{k=1}^{n/2} a_{i, 2k - 1} \cdot b_{i,2k} 
+\end{equation}
+
+\begin{equation}
+    \label{eq:mul_col}
+    F_j = \sum_{k=1}^{n/2} b_{2k - 1, j} \cdot b_{2k,j} 
+\end{equation}
+
+Тогда элемент $c_{ij}$ будет вычисляться по формуле~(\ref{eq:winograd_mult})~\cite{winograd}.
+
+\begin{equation}
+    \label{eq:winograd_mult}
+    c_{ij} = \sum_{k=1}^{n/2} (a_{i, 2k-1} + b_{2k,j}) (a_{i, 2k} + b_{2k-1,j}) - E_i - F_j
+\end{equation}
+
+В алгоритме Винограда количество операций умножения уменьшается за счет увеличения числа сложений. Алгоритм Винограда теоретически быстрее стандартного алгоритма, так как операция сложения на электронно-вычислительной машине (ЭВМ) выполняется быстрее, чем умножение~\cite{winograd}.
