@@ -68,25 +68,24 @@
 \end{bmatrix} \label{eq:matrix_definitions}
 \end{align}
 
-
-
 \begin{table}[htb]
-\caption{\centering Тесты для алгоритмов умножения матриц}
+\caption{Тесты для алгоритмов умножения матриц}
 \small
-\centering\begin{tabular}{|c|p{3cm}|p{4cm}|p{2cm}|p{2cm}|p{2.1cm}|}
+\centering
+\begin{tabular}{|c|p{3cm}|p{4cm}|p{2cm}|p{2.1cm}|p{2.4cm}|}
     \hline
-    № & Описание теста & Алгоритм & Входные данные & Выходные данные & Ожидаемые данные \\ \hline
+    № & \textbf{Описание теста} & \textbf{Алгоритм} & \textbf{Входные данные} & \textbf{Выходные данные} & \textbf{Ожидаемые данные} \\ \hline
     1 & Пустые матрицы & Стандартный & $m_1, m_1$ & None & None \\ \hline
     2 & Пустые матрицы & Виноград & $m_1, m_1$ & None & None \\ \hline
     3 & Пустые матрицы & Оптимизированный Виноград & $m_1, m_1$ & None & None \\ \hline
     4 & Несовместимые матрицы & Стандартный & $m_2, m_5$ & None & None \\ \hline
     5 & Несовместимые матрицы & Виноград & $m_2, m_5$ & None & None \\ \hline
-    6 & Несовместимые матрицы & Оптимизированный Виноград & $m_2, m_5$ & None & None
-    \\ \hline
+    6 & Несовместимые матрицы & Оптимизированный Виноград & $m_2, m_5$ & None & None \\ \hline
     7 & Корректные данные & Стандартный & $m_2, m_3$ & $m_4$ & $m_4$ \\ \hline
     8 & Корректные данные & Виноград & $m_2, m_3$ & $m_4$ & $m_4$ \\ \hline
     9 & Корректные данные & Оптимизированный Виноград & $m_2, m_3$ & $m_4$ & $m_4$ \\ \hline
 \end{tabular}
 \label{table:matrix_tests}
 \end{table}
+
 
