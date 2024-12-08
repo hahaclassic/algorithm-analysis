@@ -1,0 +1,21 @@
+package storage
+
+import (
+	"context"
+	"errors"
+
+	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/models"
+)
+
+var (
+	ErrStorageConnection = errors.New("storage: failed to connect to the database")
+	ErrDisconnect        = errors.New("storage: failed to disconnect from database")
+
+	ErrSaveRecipe = errors.New("storage: failed to save recipe")
+	// ErrGetAllRecipes = errors.New("storage: failed to get all recipes")
+)
+
+type Storage interface {
+	SaveRecipe(ctx context.Context, recipe *models.Recipe) error
+	//GetAllRecipes(ctx context.Context) ([]*models.Recipe, error)
+}
