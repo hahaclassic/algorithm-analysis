@@ -11,11 +11,13 @@ var (
 	ErrStorageConnection = errors.New("storage: failed to connect to the database")
 	ErrDisconnect        = errors.New("storage: failed to disconnect from database")
 
-	ErrSaveRecipe = errors.New("storage: failed to save recipe")
+	ErrClearCollection = errors.New("storage: failed to clear collection")
+	ErrSaveRecipe      = errors.New("storage: failed to save recipe")
 	// ErrGetAllRecipes = errors.New("storage: failed to get all recipes")
 )
 
 type Storage interface {
 	SaveRecipe(ctx context.Context, recipe *models.Recipe) error
+	Clear(ctx context.Context) error
 	//GetAllRecipes(ctx context.Context) ([]*models.Recipe, error)
 }

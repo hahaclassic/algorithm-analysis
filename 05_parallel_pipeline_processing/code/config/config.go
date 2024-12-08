@@ -7,18 +7,19 @@ import (
 )
 
 const (
-	configPath = "./.env"
+	configPath = "../.env"
 )
 
 type Config struct {
-	MongoDB MongoConfig
+	Pipeline        PipelineConfig
+	MongoDB         MongoConfig
+	ClearCollection bool
 }
 
-type PiplineConfig struct {
-	SourceDir         string
-	ReadStageWorkers  int
-	ParseStageWorkers int
-	SaveStageWorkers  int
+type PipelineConfig struct {
+	SourceDir    string
+	ChanLen      int
+	StageWorkers int
 }
 
 type MongoConfig struct {

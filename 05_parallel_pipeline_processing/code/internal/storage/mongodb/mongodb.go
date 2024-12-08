@@ -10,6 +10,7 @@ import (
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/config"
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/models"
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/storage"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
@@ -66,6 +67,20 @@ func (m *MongoDB) SaveRecipe(ctx context.Context, recipe *models.Recipe) error {
 	if err != nil {
 		return fmt.Errorf("%w: %w", storage.ErrSaveRecipe, err)
 	}
+
+	return nil
+}
+
+func (m *MongoDB) Clear(ctx context.Context) error {
+	ctxInsert, cancel := context.WithTimeout(ctx, 10*time.Second)
+	defer cancel()
+
+	result, err := m.collection.DeleteMany(ctxInsert, bson.M{})
+	if err != nil {
+		return fmt.Errorf("%w: %w", storage.ErrSaveRecipe, err)
+	}
+
+	slog.Info(fmt.Sprintf("Deleted %d documents from the collection\n", result.DeletedCount))
 
 	return nil
 }

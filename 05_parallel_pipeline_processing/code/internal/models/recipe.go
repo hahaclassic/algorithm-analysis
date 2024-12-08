@@ -1,8 +1,8 @@
 package models
 
 type Recipe struct {
-	ID          string        `bson:"id"`
-	IssueID     string        `bson:"issue_id"`
+	ID          int           `bson:"id"`
+	IssueID     int           `bson:"issue_id"`
 	URL         string        `bson:"url"`
 	Title       string        `bson:"title"`
 	Ingredients []*Ingredient `bson:"ingredients"`

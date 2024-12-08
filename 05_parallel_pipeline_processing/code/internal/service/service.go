@@ -11,8 +11,11 @@ import (
 
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/config"
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/models"
+	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/parser"
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/storage"
 )
+
+const issueID = 9144
 
 type (
 	taskChIn  <-chan *models.Task
@@ -20,30 +23,33 @@ type (
 	stageFunc func(ctx context.Context, in taskChIn, out taskChOut)
 )
 
-type PiplineService struct {
-	cfg *config.PiplineConfig
-	db  *storage.Storage
+type PipelineService struct {
+	Conf   *config.PipelineConfig
+	parser *parser.Parser
+	db     storage.Storage
 }
 
-func New(cfg *config.PiplineConfig, db *storage.Storage) *PiplineService {
-	return &PiplineService{
-		db: db,
+func New(conf *config.PipelineConfig, db storage.Storage) *PipelineService {
+	return &PipelineService{
+		Conf:   conf,
+		db:     db,
+		parser: &parser.Parser{},
 	}
 }
 
-func (PiplineService) configureTaskGenerator(f func(ctx context.Context, out taskChOut), out taskChOut) func(ctx context.Context) {
+func (PipelineService) configureTaskGenerator(f func(ctx context.Context, out taskChOut), out taskChOut) func(ctx context.Context) {
 	return func(ctx context.Context) {
 		f(ctx, out)
 	}
 }
 
-func (PiplineService) configureFinalFunc(f func(ctx context.Context, in taskChIn), in taskChIn) func(ctx context.Context) {
+func (PipelineService) configureFinalFunc(f func(ctx context.Context, in taskChIn), in taskChIn) func(ctx context.Context) {
 	return func(ctx context.Context) {
 		f(ctx, in)
 	}
 }
 
-func (PiplineService) configureStageFunc(handler stageFunc, in taskChIn, out taskChOut, workersQuantity int) func(ctx context.Context) {
+func (PipelineService) configureStageFunc(handler stageFunc, in taskChIn, out taskChOut, workersQuantity int) func(ctx context.Context) {
 	return func(ctx context.Context) {
 		wg := &sync.WaitGroup{}
 		wg.Add(workersQuantity)
@@ -60,25 +66,24 @@ func (PiplineService) configureStageFunc(handler stageFunc, in taskChIn, out tas
 	}
 }
 
-func (p *PiplineService) Start() {
+func (p *PipelineService) Start(ctx context.Context) {
 	var (
-		readChIn  = make(chan *models.Task)
-		parseChIn = make(chan *models.Task)
-		saveChIn  = make(chan *models.Task)
-		logChIn   = make(chan *models.Task)
+		readChIn  = make(chan *models.Task, p.Conf.ChanLen)
+		parseChIn = make(chan *models.Task, p.Conf.ChanLen)
+		saveChIn  = make(chan *models.Task, p.Conf.ChanLen)
+		logChIn   = make(chan *models.Task, p.Conf.ChanLen)
 	)
 
 	stages := []func(ctx context.Context){
 		p.configureTaskGenerator(p.readFileNames, readChIn),
-		p.configureStageFunc(p.readFileContent, readChIn, parseChIn, p.cfg.ReadStageWorkers),
-		p.configureStageFunc(p.parseRecipe, parseChIn, saveChIn, p.cfg.ParseStageWorkers),
-		p.configureStageFunc(p.saveRecipe, saveChIn, logChIn, p.cfg.SaveStageWorkers),
+		p.configureStageFunc(p.readFileContent, readChIn, parseChIn, p.Conf.StageWorkers),
+		p.configureStageFunc(p.parseRecipe, parseChIn, saveChIn, p.Conf.StageWorkers),
+		p.configureStageFunc(p.saveRecipe, saveChIn, logChIn, p.Conf.StageWorkers),
 		p.configureFinalFunc(p.logTask, logChIn),
 	}
 
 	wg := &sync.WaitGroup{}
 	wg.Add(len(stages))
-	ctx := context.Background()
 
 	for _, stage := range stages {
 		go func(ctx context.Context) {
@@ -91,16 +96,16 @@ func (p *PiplineService) Start() {
 }
 
 // Task generator
-func (p *PiplineService) readFileNames(ctx context.Context, out taskChOut) {
+func (p *PipelineService) readFileNames(ctx context.Context, out taskChOut) {
 	defer close(out)
 
-	files, err := os.ReadDir(p.cfg.SourceDir)
+	files, err := os.ReadDir(p.Conf.SourceDir)
 	if err != nil {
-		slog.Error("readFile", "err", fmt.Errorf("failed to read dir %s: %w", p.cfg.SourceDir, err))
+		slog.Error("readFileNames", "err", fmt.Errorf("failed to read dir %s: %w", p.Conf.SourceDir, err))
 		return
 	}
 
-	for _, file := range files {
+	for idx, file := range files {
 		select {
 		case <-ctx.Done():
 			slog.Info("readFile", "info", "context done.")
@@ -113,8 +118,11 @@ func (p *PiplineService) readFileNames(ctx context.Context, out taskChOut) {
 		}
 
 		task := &models.Task{
+			ID:      idx,
 			Created: time.Now(),
-			Meta:    filepath.Join(p.cfg.SourceDir, file.Name()),
+			Meta: &models.File{
+				Name: file.Name(),
+			},
 			Stages: []*models.StageInfo{
 				{
 					Name:   "readFileContent",
@@ -127,31 +135,31 @@ func (p *PiplineService) readFileNames(ctx context.Context, out taskChOut) {
 }
 
 // Stage Func
-func (p *PiplineService) readFileContent(ctx context.Context, in taskChIn, out taskChOut) {
-	defer close(out)
-
+func (p *PipelineService) readFileContent(ctx context.Context, in taskChIn, out taskChOut) {
 	for task := range in {
 		select {
 		case <-ctx.Done():
-			slog.Info("Context done.")
+			slog.Info("readFileContent", "info", "context done.")
 			return
 		default:
 		}
 		task.Stages[len(task.Stages)-1].Started = time.Now()
 
-		filePath, ok := task.Meta.(string)
+		file, ok := task.Meta.(*models.File)
 		if !ok {
 			slog.Error("readFileContent", "err", "type assertion error")
-		}
-
-		content, err := os.ReadFile(filePath)
-		if err != nil {
-			slog.Error("readFileContent", "err",
-				fmt.Errorf("type assertion error: %s, %w", filePath, err))
 			continue
 		}
 
-		task.Meta = string(content)
+		content, err := os.ReadFile(filepath.Join(p.Conf.SourceDir, file.Name))
+		if err != nil {
+			slog.Error("readFileContent", "err",
+				fmt.Errorf("failed to read file '%s': %w", file.Name, err))
+			continue
+		}
+
+		file.Content = content
+		task.Meta = file
 		task.Stages[len(task.Stages)-1].Finished = time.Now()
 		task.Stages = append(task.Stages, &models.StageInfo{
 			Name:   "parseRecipe",
@@ -162,10 +170,87 @@ func (p *PiplineService) readFileContent(ctx context.Context, in taskChIn, out t
 }
 
 // Stage Func
-func (p *PiplineService) parseRecipe(ctx context.Context, in taskChIn, out taskChOut) {}
+func (p *PipelineService) parseRecipe(ctx context.Context, in taskChIn, out taskChOut) {
+	for task := range in {
+		select {
+		case <-ctx.Done():
+			slog.Info("parseRecipe", "info", "context done.")
+			return
+		default:
+		}
+		task.Stages[len(task.Stages)-1].Started = time.Now()
+
+		file, ok := task.Meta.(*models.File)
+		if !ok {
+			slog.Error("parseRecipe", "err", "type assertion error")
+			continue
+		}
+
+		recipe, err := p.parser.ParseHTMLToRecipe(file.Content)
+		if err != nil {
+			slog.Error("parseRecipe", "err", fmt.Errorf("invalid hmtl in task %d: %w", task.ID, err))
+			continue
+		}
+
+		recipe.ID = task.ID
+		recipe.IssueID = issueID
+		recipe.URL = file.Name
+
+		task.Meta = recipe
+		task.Stages[len(task.Stages)-1].Finished = time.Now()
+		task.Stages = append(task.Stages, &models.StageInfo{
+			Name:   "saveRecipe",
+			Queued: time.Now(),
+		})
+		out <- task
+	}
+}
 
 // Stage Func
-func (p *PiplineService) saveRecipe(ctx context.Context, in taskChIn, out taskChOut) {}
+func (p *PipelineService) saveRecipe(ctx context.Context, in taskChIn, out taskChOut) {
+	for task := range in {
+		select {
+		case <-ctx.Done():
+			slog.Info("saveRecipe", "info", "context done.")
+			return
+		default:
+		}
+		task.Stages[len(task.Stages)-1].Started = time.Now()
+
+		recipe, ok := task.Meta.(*models.Recipe)
+		if !ok {
+			slog.Error("saveRecipe", "err", "type assertion error")
+			continue
+		}
+
+		err := p.db.SaveRecipe(ctx, recipe)
+		if err != nil {
+			slog.Error("saveRecipe", "err", err)
+		}
+
+		task.Meta = nil
+		task.Stages[len(task.Stages)-1].Finished = time.Now()
+		task.Stages = append(task.Stages, &models.StageInfo{
+			Name:   "logTask",
+			Queued: time.Now(),
+		})
+		out <- task
+	}
+}
 
 // Final Func
-func (PiplineService) logTask(ctx context.Context, in taskChIn) {}
+func (PipelineService) logTask(ctx context.Context, in taskChIn) {
+	for task := range in {
+		task.Destructed = time.Now()
+		slog.Info(fmt.Sprintf("logTask: task with id %d received", task.ID))
+		fmt.Println("TASK",
+			"\n-id:", task.ID,
+			"\n-created:", task.Created,
+			"\n-destructed:", task.Destructed,
+			"\n-stages:")
+		for i := range task.Stages {
+			fmt.Println(*task.Stages[i])
+		}
+		fmt.Println()
+	}
+}
