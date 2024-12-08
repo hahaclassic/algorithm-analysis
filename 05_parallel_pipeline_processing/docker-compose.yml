@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    ports:
+      - "27017:27017" 
+    volumes:
+      - mongodb-data:/data/db 
+      - ./jsondump/:/jsondump/
+    env_file:
+      - $PWD/.env
+
+volumes:
+  mongodb-data:
