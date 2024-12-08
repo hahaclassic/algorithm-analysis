@@ -13,6 +13,6 @@ mongoexport --authenticationDatabase=$MONGO_INITDB_ROOT_USERNAME \
             --db="${MONGO_INITDB_DATABASE}" \
             --collection="recipes" \
             --out="/jsondump/recipes.json" \
-            --jsonArray
+            --jsonArray --pretty
 
 echo "Done. dir with data: ../jsondump/recipes.json"
