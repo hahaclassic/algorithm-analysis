@@ -35,17 +35,6 @@ func New(ctx context.Context, cfg *config.MongoConfig) (_ *MongoDB, err error) {
 		return nil, fmt.Errorf("%w: %w", storage.ErrStorageConnection, err)
 	}
 
-	defer func() {
-		if err == nil {
-			return
-		}
-
-		if err = client.Disconnect(ctx); err != nil {
-			slog.Error("mongo", "err",
-				fmt.Errorf("%w: %w", storage.ErrDisconnect, err))
-		}
-	}()
-
 	ctxPing, cancel := context.WithTimeout(ctx, 2*time.Second)
 	defer cancel()
 
