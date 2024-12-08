@@ -74,43 +74,6 @@ func (m *MongoDB) Clear(ctx context.Context) error {
 	return nil
 }
 
-// func (m *MongoDB) GetAllRecipes(ctx context.Context) ([]*models.Recipe, error) {
-// 	cursor, err := m.collection.Find(ctx, bson.M{})
-// 	if err != nil {
-// 		return nil, fmt.Errorf("%w: %w", storage.ErrGetAllRecipes, err)
-// 	}
-// 	defer cursor.Close(ctx)
-
-// 	var recipesBSON []bson.M
-// 	if err = cursor.All(ctx, &recipesBSON); err != nil {
-// 		return nil, fmt.Errorf("%w: %w", storage.ErrGetAllRecipes, err)
-// 	}
-
-// 	var recipes []*models.Recipe
-// 	for _, recipeData := range recipesBSON {
-// 		var recipe models.Recipe
-// 		if err := bson.Unmarshal(recipeData, &recipe); err != nil {
-// 			log.Println("Ошибка при распаковке данных: ", err)
-// 			continue
-// 		}
-// 		recipeModels = append(recipeModels, &recipe)
-// 	}
-
-// 	return recipes, nil
-
-// 	file, err := os.Create("recipes.json")
-// 	if err != nil {
-// 		log.Fatal(err)
-// 	}
-// 	defer file.Close()
-
-// 	encoder := json.NewEncoder(file)
-// 	encoder.SetIndent("", "  ") // Для форматирования с отступами
-// 	if err := encoder.Encode(recipes); err != nil {
-// 		log.Fatal(err)
-// 	}
-// }
-
 func (m *MongoDB) Close(ctx context.Context) error {
 	if err := m.client.Disconnect(ctx); err != nil {
 		return fmt.Errorf("%w: %w", storage.ErrStorageConnection, err)

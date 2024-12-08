@@ -13,11 +13,9 @@ var (
 
 	ErrClearCollection = errors.New("storage: failed to clear collection")
 	ErrSaveRecipe      = errors.New("storage: failed to save recipe")
-	// ErrGetAllRecipes = errors.New("storage: failed to get all recipes")
 )
 
 type Storage interface {
 	SaveRecipe(ctx context.Context, recipe *models.Recipe) error
 	Clear(ctx context.Context) error
-	//GetAllRecipes(ctx context.Context) ([]*models.Recipe, error)
 }
