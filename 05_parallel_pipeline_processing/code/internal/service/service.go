@@ -23,6 +23,7 @@ type (
 	stageFunc func(ctx context.Context, in taskChIn, out taskChOut)
 )
 
+// TODO: add avg stats
 type PipelineService struct {
 	Conf   *config.PipelineConfig
 	parser *parser.Parser
@@ -226,6 +227,7 @@ func (p *PipelineService) saveRecipe(ctx context.Context, in taskChIn, out taskC
 		err := p.db.SaveRecipe(ctx, recipe)
 		if err != nil {
 			slog.Error("saveRecipe", "err", err)
+			continue
 		}
 
 		task.Meta = nil
@@ -239,6 +241,7 @@ func (p *PipelineService) saveRecipe(ctx context.Context, in taskChIn, out taskC
 }
 
 // Final Func
+// TODO: logging into a file
 func (PipelineService) logTask(ctx context.Context, in taskChIn) {
 	for task := range in {
 		task.Destructed = time.Now()
