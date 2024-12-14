@@ -14,7 +14,8 @@ $(READY_DIR)/stud-unit-test-report.json: $(READY_DIR)
 $(READY_DIR)/main-cli-debug.py: $(READY_DIR)
 
 $(READY_DIR)/app-cli-debug: $(READY_DIR)
-	go -C ./code build -o ../$(READY_DIR)/app-cli-debug ./cmd/main.go
+	cp ./code/.env $(READY_DIR)/.env
+	go -C ./code build -o ../$(READY_DIR)/app-cli-debug ./cmd/app/main.go
 
 $(READY_DIR):
 	@mkdir -p ./ready
