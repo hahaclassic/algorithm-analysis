@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	configPath = "../.env"
+	configPath = ".env"
 )
 
 type Config struct {

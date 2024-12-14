@@ -6,12 +6,15 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"unicode"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/models"
 )
 
 // HTML elements
+// url: <meta property="og:url" content="https://www.edimdoma.ru/retsepty/121730-salat-simvol-goda">
+//
 // name: <h1 class="recipe-header__name" data-promo-recipe="false">Соленые зеленые помидоры</h1>
 //
 // img: <img alt="Соленые зеленые помидоры" title="Соленые зеленые помидоры"
@@ -30,14 +33,6 @@ var (
 
 type Parser struct{}
 
-func (Parser) extractImageURL(doc *goquery.Document) string {
-	imgURL, exists := doc.Find("div.thumb-slider__slide img").Attr("src")
-	if exists {
-		return imgURL
-	}
-	return ""
-}
-
 func (p Parser) ParseHTMLToRecipe(html []byte) (*models.Recipe, error) {
 	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(html))
 	if err != nil {
@@ -48,10 +43,11 @@ func (p Parser) ParseHTMLToRecipe(html []byte) (*models.Recipe, error) {
 		Title:       doc.Find("h1.recipe-header__name").Text(),
 		ImageURL:    p.extractImageURL(doc),
 		Ingredients: p.extractIngredients(doc),
+		URL:         p.extractURL(doc),
 	}
 
 	doc.Find("div[data-module='step_hint']").Each(func(i int, s *goquery.Selection) {
-		step := strings.TrimSpace(s.Text())
+		step := removeNonPrintable(strings.TrimSpace(s.Text()))
 		if step != "" {
 			recipe.Steps = append(recipe.Steps, step)
 		}
@@ -85,6 +81,22 @@ func (p Parser) extractIngredients(doc *goquery.Document) []*models.Ingredient {
 	return ingredients
 }
 
+func (Parser) extractImageURL(doc *goquery.Document) string {
+	imgURL, exists := doc.Find("div.thumb-slider__slide img").Attr("src")
+	if exists {
+		return imgURL
+	}
+	return ""
+}
+
+func (Parser) extractURL(doc *goquery.Document) string {
+	url, exists := doc.Find("meta[property='og:url']").Attr("content")
+	if exists {
+		return url
+	}
+	return ""
+}
+
 func (Parser) extractQuantity(s *goquery.Selection) float64 {
 	quantityStr, exists := s.Attr("value")
 	var quantity float64
@@ -110,4 +122,13 @@ func (Parser) extractUnit(s *goquery.Selection) string {
 	}
 
 	return unit
+}
+
+func removeNonPrintable(s string) string {
+	return strings.Map(func(r rune) rune {
+		if unicode.IsPrint(r) {
+			return r
+		}
+		return -1 // Удаляем символ
+	}, s)
 }
