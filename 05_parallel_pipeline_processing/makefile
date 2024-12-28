@@ -1,11 +1,6 @@
 include ./code/.env
 export $(shell sed 's/=.*//g' ./code/.env)
 
-MONGO_URI=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@${MONGO_INITDB_HOST}:${MONGO_INITDB_PORT}/?authSource=admin
-MONGO_DB=${MONGO_INITDB_DATABASE}
-MONGO_COLLECTION=recipes
-OUTPUT_FILE=recipes.json
-
 startdb:
 	docker compose up mongodb
 
