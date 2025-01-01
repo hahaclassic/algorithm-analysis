@@ -26,7 +26,6 @@ func Run(conf *config.Config) {
 		} else {
 			slog.Info("All data deleted")
 		}
-		return
 	}
 
 	service.New(&conf.Pipeline, mongo).Start(ctx)
