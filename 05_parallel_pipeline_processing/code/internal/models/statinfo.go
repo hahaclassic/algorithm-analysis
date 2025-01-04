@@ -16,14 +16,23 @@ type AvgStageInfo struct {
 }
 
 type AvgStatInfo struct {
-	TaskLifeTime time.Duration // lifeTime = Destucted - Created
-	countTask    int
-	StageInfo    []*AvgStageInfo
+	TaskLifeTime  time.Duration // lifeTime = Destucted - Created
+	countTask     int
+	StageInfo     []*AvgStageInfo
+	minCreated    time.Time
+	maxDestructed time.Time
 }
 
 func (s *AvgStatInfo) AddTask(task *Task) {
 	s.countTask++
 	s.TaskLifeTime += task.Destructed.Sub(task.Created)
+
+	if s.minCreated.IsZero() || task.Created.Compare(s.minCreated) < 0 {
+		s.minCreated = task.Created
+	}
+	if s.maxDestructed.IsZero() || task.Destructed.Compare(s.maxDestructed) > 0 {
+		s.maxDestructed = task.Destructed
+	}
 
 	for i, stage := range task.Stages {
 		if i >= len(s.StageInfo) {
@@ -52,7 +61,7 @@ func (s *AvgStatInfo) Print(workers int, chanLen int) {
 
 	fmt.Println("--------------------------\nStatistics\n--------------------------")
 	fmt.Println("Workers:", workers, "\nChannel length:", chanLen, "\nNum of tasks:",
-		s.countTask, "\nAvg task lifetime:", s.TaskLifeTime)
+		s.countTask, "\nAvg task lifetime:", s.TaskLifeTime, "\nTotal time:", s.maxDestructed.Sub(s.minCreated))
 
 	headers := []string{"Stage Name", "Avg waiting time", "Avg processing time"}
 	rows := make([][]interface{}, 0, len(s.StageInfo))

@@ -13,7 +13,7 @@ colors = [
 ]
 
 for col in df.columns[1:]:  
-    df[col] = df[col]
+    df[col] = df[col] / 1000
 
 fig, ax = plt.subplots(figsize=(10, 6))
 
@@ -38,7 +38,7 @@ for i, row in df.iterrows():
     ax.barh(row['TaskID'], row['saveRecipeFinished'] - row['saveRecipeStarted'], 
             left=row['saveRecipeStarted'] - start, height=0.6, color=colors[2], zorder=2, edgecolor='black')
 
-ax.set_xlabel('Время (мкс)', fontsize=12)
+ax.set_xlabel('Время, мc', fontsize=12)
 ax.set_ylabel('Идентификатор задачи (taskID)', fontsize=12)
 ax.set_title('Диаграмма Ганта', fontsize=14)
 plt.xticks(rotation=45)

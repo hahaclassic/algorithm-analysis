@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"log"
 
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/config"
 	"github.com/hahaclassic/algorithm-analysis/05_parallel_pipeline/internal/app"
@@ -20,6 +21,10 @@ func init() {
 	flag.IntVar(&stageWorkers, "workers", 1, "number of goroutines per stage")
 	flag.BoolVar(&clearCollection, "d", false, "flag for delete all recipes in db")
 	flag.Parse()
+
+	if chanLen < 0 || stageWorkers < 1 {
+		log.Fatal("invalid number of stage workers or channel length")
+	}
 }
 
 func main() {

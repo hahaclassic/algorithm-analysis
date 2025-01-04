@@ -258,6 +258,6 @@ func (p *PipelineService) logTask(ctx context.Context, in taskChIn) {
 		task.Destructed = time.Now()
 		p.stat.AddTask(task) // Collect stats
 		p.logger.Info(task)  // Log task
-		slog.Info(fmt.Sprintf("logTask: task with id %d has been received", task.ID))
+		//slog.Info(fmt.Sprintf("logTask: task with id %d has been received", task.ID))
 	}
 }
