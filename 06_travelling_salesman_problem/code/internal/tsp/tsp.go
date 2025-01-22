@@ -1,0 +1,8 @@
+package tsp
+
+import "github.com/hahaclassic/algorithm-analysis/06_travelling_salesman_problem/code/internal/graphmap"
+
+// the graph must be fully connected
+type TSPSolver interface {
+	SolveTSP(graph *graphmap.Graph) ([]int, float64)
+}
