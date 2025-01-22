@@ -129,8 +129,8 @@ func (c Controller) benchmark() error {
 
 func (c Controller) parameterizeAntColony() error {
 	numIterations := c.readIntWithDefault("Enter the number of iterations (default: 10): ", 10)
-	filename := c.readStringWithDefault("Enter the filename (default: ../data/result.txt): ",
-		"../data/result.txt")
+	filename := c.readStringWithDefault("Enter the filename (default: ../result/result.txt): ",
+		"../result/result.txt")
 
 	params := &antcolony.VariableInputParams{
 		Alpha:       []float64{0.1, 0.3, 0.5, 0.7, 0.9},
@@ -142,6 +142,8 @@ func (c Controller) parameterizeAntColony() error {
 	if err := p.ParameterizeAntColony(filename, params, numIterations); err != nil {
 		return fmt.Errorf("failed to parameterize ant colony: %v", err)
 	}
+
+	slog.Info("Parameterization done.")
 
 	return nil
 }

@@ -15,13 +15,13 @@ func BenchmarkTSPSolvers(startCities int, endCities int, step int, runs int) {
 	colony := antcolony.NewAntColony(nil)
 
 	headers := []string{"num of cities", "brute force", "ant colony"}
-	rows := [][]any{}
+	rows := [][]interface{}{}
 
 	for numCities := startCities; numCities <= endCities; numCities += step {
 		bfDuration := benchmark(bfSolver, numCities, runs)
 		colonyDuration := benchmark(colony, numCities, runs)
 
-		rows = append(rows, []any{numCities, bfDuration, colonyDuration})
+		rows = append(rows, []interface{}{numCities, bfDuration, colonyDuration})
 	}
 
 	tableoutput.PrintTable(headers, rows)
@@ -38,5 +38,5 @@ func benchmark(solver tsp.TSPSolver, cities int, runs int) time.Duration {
 		elapsed += time.Since(startTime)
 	}
 
-	return time.Duration(float64(elapsed.Milliseconds())/float64(runs)) * time.Millisecond
+	return elapsed / time.Duration(runs)
 }

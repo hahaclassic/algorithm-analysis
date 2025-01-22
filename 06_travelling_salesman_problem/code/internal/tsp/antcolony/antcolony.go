@@ -25,11 +25,11 @@ const (
 // )
 
 type Settings struct {
-	Alpha       float64 // Влияние феромонов
-	Beta        float64 // Влияние времени
-	Evaporation float64
+	Alpha       float64
+	Beta        float64
+	Evaporation float64 // Испарение феромонов
 	EliteAnts   int
-	Q           float64
+	q           float64
 	Iterations  int // Время жизни колонии (tmax)
 }
 
@@ -45,9 +45,9 @@ func NewAntColony(settings *Settings) *Colony {
 			Alpha:       0.1,
 			Beta:        0.9,
 			Evaporation: 0.75,
-			EliteAnts:   10,
-			Q:           100,
-			Iterations:  500,
+			EliteAnts:   2,
+			q:           100,
+			Iterations:  10,
 		}
 	}
 
@@ -69,6 +69,7 @@ func (c *Colony) SolveTSP(graph *graphmap.Graph) ([]int, float64) {
 	}
 
 	c.graph = graph
+	c.setQ()
 	c.initPheromones()
 	antPlacement := c.randomAntPlacement()
 
@@ -95,6 +96,19 @@ func (c *Colony) SolveTSP(graph *graphmap.Graph) ([]int, float64) {
 	}
 
 	return bestPath, bestTime
+}
+
+func (c *Colony) setQ() {
+	q := 0.0
+
+	for i := 0; i < c.graph.NumOfCities; i++ {
+		for j := 0; j < c.graph.NumOfCities; j++ {
+			q += float64(c.graph.TravelTime[i][j])
+		}
+	}
+
+	q /= float64(c.graph.NumOfCities)
+	c.params.q = q
 }
 
 func (c *Colony) initPheromones() {
@@ -194,7 +208,7 @@ func (c *Colony) updatePheromones(allPaths [][]int, allTimes []float64, bestPath
 	}
 
 	for i := range allPaths {
-		pheromoneDeposit := c.params.Q / float64(allTimes[i])
+		pheromoneDeposit := c.params.q / float64(allTimes[i])
 		for j := 0; j < len(allPaths[i])-1; j++ {
 			from := allPaths[i][j]
 			to := allPaths[i][j+1]
@@ -204,7 +218,7 @@ func (c *Colony) updatePheromones(allPaths [][]int, allTimes []float64, bestPath
 		}
 	}
 
-	elitePheromoneDeposit := float64(c.params.EliteAnts) * c.params.Q / float64(bestTime)
+	elitePheromoneDeposit := float64(c.params.EliteAnts) * c.params.q / float64(bestTime)
 	for i := 0; i < len(bestPath)-1; i++ {
 		from := bestPath[i]
 		to := bestPath[i+1]

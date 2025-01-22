@@ -8,7 +8,6 @@ import (
 	"sort"
 
 	"github.com/hahaclassic/algorithm-analysis/06_travelling_salesman_problem/code/internal/graphmap"
-	"github.com/hahaclassic/algorithm-analysis/06_travelling_salesman_problem/code/internal/tsp/bruteforce"
 )
 
 var (
@@ -16,7 +15,7 @@ var (
 )
 
 const (
-	graphsDir = "../data"
+	graphsDir = "../data/"
 )
 
 type VariableInputParams struct {
@@ -30,6 +29,17 @@ type ParamResult struct {
 	Beta        float64
 	Evaporation float64
 	Deviation   *Deviation
+}
+
+func (p ParamResult) String() string {
+	return fmt.Sprintf("%.2f  %.2f  %.2f  %.2f  %.2f  %.2f\n",
+		p.Alpha,
+		p.Beta,
+		p.Evaporation,
+		p.Deviation.MaxDeviation,
+		p.Deviation.MedianDeviation,
+		p.Deviation.AvgDeviation,
+	)
 }
 
 type Deviation struct {
@@ -56,12 +66,14 @@ func (p *Parameterizer) ParameterizeAntColony(filename string, params *VariableI
 	p.GraphsCount = len(graphs)
 	p.RunsCount = numRuns
 
-	bruteforcer := &bruteforce.BruteForceSolver{}
-	bestTimes := make([]float64, p.GraphsCount)
-	for i := range p.GraphsCount {
-		_, travelTime := bruteforcer.SolveTSP(graphs[i])
-		bestTimes[i] = travelTime
-	}
+	//bruteforcer := &bruteforce.BruteForceSolver{}
+	bestTimes := []float64{104.1, 191.3, 242.70000000000002}
+	//bestTimes := make([]float64, p.GraphsCount)
+	// for i := range p.GraphsCount {
+	// 	_, travelTime := bruteforcer.SolveTSP(graphs[i])
+	// 	slog.Info("brute force:", "graph", i+1)
+	// 	bestTimes[i] = travelTime
+	// }
 
 	for _, alpha := range params.Alpha {
 		for _, beta := range params.Beta {
@@ -70,9 +82,8 @@ func (p *Parameterizer) ParameterizeAntColony(filename string, params *VariableI
 					Alpha:       alpha,
 					Beta:        beta,
 					Evaporation: evaporation,
-					EliteAnts:   10,
-					Q:           100,
-					Iterations:  10,
+					EliteAnts:   3,
+					Iterations:  400,
 				})
 				deviation := p.calc(colony, graphs, bestTimes)
 
@@ -86,7 +97,9 @@ func (p *Parameterizer) ParameterizeAntColony(filename string, params *VariableI
 		}
 	}
 
-	err = p.saveToFile(filename)
+	minResults := p.findBestParams()
+
+	err = p.saveToFile(filename, minResults)
 	if err != nil {
 		return fmt.Errorf("%w: %w", ErrFailedParameterization, err)
 	}
@@ -113,6 +126,32 @@ func (p *Parameterizer) calc(colony *Colony, graphs []*graphmap.Graph, bestTimes
 	}
 }
 
+func (p *Parameterizer) findBestParams() []*ParamResult {
+	if len(p.Data) == 0 {
+		return nil
+	}
+
+	var minMaxDeviation, minMedianDeviation, minAvgDeviation *ParamResult
+
+	minMaxDeviation = p.Data[0]
+	minMedianDeviation = p.Data[0]
+	minAvgDeviation = p.Data[0]
+
+	for _, param := range p.Data {
+		if param.Deviation.MaxDeviation < minMaxDeviation.Deviation.MaxDeviation {
+			minMaxDeviation = param
+		}
+		if param.Deviation.MedianDeviation < minMedianDeviation.Deviation.MedianDeviation {
+			minMedianDeviation = param
+		}
+		if param.Deviation.AvgDeviation < minAvgDeviation.Deviation.AvgDeviation {
+			minAvgDeviation = param
+		}
+	}
+
+	return []*ParamResult{minMaxDeviation, minMedianDeviation, minAvgDeviation}
+}
+
 func (Parameterizer) loadGraphs() ([]*graphmap.Graph, error) {
 	graphs := []*graphmap.Graph{}
 
@@ -121,7 +160,7 @@ func (Parameterizer) loadGraphs() ([]*graphmap.Graph, error) {
 			return err
 		}
 
-		if !info.IsDir() {
+		if info.IsDir() {
 			return nil
 		}
 
@@ -148,7 +187,7 @@ func (Parameterizer) calculateAvgDeviation(deviations []float64) float64 {
 	return float64(sum) / float64(len(deviations))
 }
 
-func (p *Parameterizer) saveToFile(filename string) error {
+func (p *Parameterizer) saveToFile(filename string, minResults []*ParamResult) error {
 	file, err := os.Create(filename)
 	if err != nil {
 		return fmt.Errorf("failed to create file: %v", err)
@@ -161,24 +200,28 @@ func (p *Parameterizer) saveToFile(filename string) error {
 	}
 
 	for _, param := range p.Data {
-		line := fmt.Sprintf("%.2f  %.2f  %.2f  %.2f  %.2f  %.2f\n",
-			param.Alpha,
-			param.Beta,
-			param.Evaporation,
-			param.Deviation.MaxDeviation,
-			param.Deviation.MedianDeviation,
-			param.Deviation.AvgDeviation,
-		)
+		line := param.String()
 		_, err = file.WriteString(line)
 		if err != nil {
 			return fmt.Errorf("failed to write data to file: %v", err)
 		}
 	}
 
+	_, err = file.WriteString("\nBest results\n")
+	if err != nil {
+		return fmt.Errorf("failed to write data to file: %v", err)
+	}
+	_, err = file.WriteString(fmt.Sprintf("min MaxDeviation: %s\nmin MedianDeviation: %s\nmin AvgDeviation: %s\n",
+		minResults[0].String(), minResults[1].String(), minResults[2].String()))
+	if err != nil {
+		return fmt.Errorf("failed to write data to file: %v", err)
+	}
 	_, err = file.WriteString(fmt.Sprintf("\nRuns Count: %d  Graphs Count: %d\n", p.RunsCount, p.GraphsCount))
 	if err != nil {
 		return fmt.Errorf("failed to write counts to file: %v", err)
 	}
+
+	fmt.Println()
 
 	return nil
 }
