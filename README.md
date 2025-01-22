@@ -9,3 +9,5 @@
 > [multithreaded_web_scraper](./04_multithreaded_web_scraper/) - Golang
 
 > [parallel_pipeline_processing](./05_parallel_pipeline_processing/) - Golang, MongoDB
+
+> [travelling_salesman_problem](./06_travelling_salesman_problem/) - Golang
