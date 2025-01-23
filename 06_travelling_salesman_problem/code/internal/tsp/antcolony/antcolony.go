@@ -42,12 +42,12 @@ type Colony struct {
 func NewAntColony(settings *Settings) *Colony {
 	if settings == nil {
 		settings = &Settings{
-			Alpha:       0.1,
-			Beta:        0.9,
-			Evaporation: 0.75,
+			Alpha:       0.9,
+			Beta:        0.3,
+			Evaporation: 0.3,
 			EliteAnts:   2,
 			q:           100,
-			Iterations:  10,
+			Iterations:  100,
 		}
 	}
 
