@@ -167,7 +167,7 @@ func (c *Colony) selectNextCity(current int, visited map[int]struct{}) int {
 			continue
 		}
 		probabilities[next] = math.Pow(c.pheromones[current][next], c.params.Alpha) *
-			math.Pow(1.0/float64(c.graph.TravelTime[current][next]), c.params.Beta)
+			math.Pow(1.0/c.graph.GetTimeOnTerrain(current, next), c.params.Beta)
 		total += probabilities[next]
 	}
 
@@ -208,7 +208,7 @@ func (c *Colony) updatePheromones(allPaths [][]int, allTimes []float64, bestPath
 	}
 
 	for i := range allPaths {
-		pheromoneDeposit := c.params.q / float64(allTimes[i])
+		pheromoneDeposit := c.params.q / allTimes[i]
 		for j := 0; j < len(allPaths[i])-1; j++ {
 			from := allPaths[i][j]
 			to := allPaths[i][j+1]
@@ -218,7 +218,7 @@ func (c *Colony) updatePheromones(allPaths [][]int, allTimes []float64, bestPath
 		}
 	}
 
-	elitePheromoneDeposit := float64(c.params.EliteAnts) * c.params.q / float64(bestTime)
+	elitePheromoneDeposit := float64(c.params.EliteAnts) * c.params.q / bestTime
 	for i := 0; i < len(bestPath)-1; i++ {
 		from := bestPath[i]
 		to := bestPath[i+1]
