@@ -1,0 +1,19 @@
+Enter operation number: 1
+Enter the start number of cities (default: 3): 
+Enter the end number of cities (default: 15): 12
+Enter the step (default: 1): 1
+Enter the number of runs (default: 10): 5
++---------------+-----------------+-------------+
+| NUM OF CITIES |     BRUTE FORCE |  ANT COLONY |
++---------------+-----------------+-------------+
+|             3 |         7.097µs |  1.890857ms |
+|             4 |         5.921µs |  1.950345ms |
+|             5 |        23.305µs |  2.940739ms |
+|             6 |       185.098µs |  4.507259ms |
+|             7 |      1.361954ms |  7.030611ms |
+|             8 |     12.881386ms | 10.118585ms |
+|             9 |    126.270046ms | 15.486321ms |
+|            10 |    1.407765411s | 20.927566ms |
+|            11 |   17.253809982s | 27.470175ms |
+|            12 | 3m45.634368708s | 36.125691ms |
++---------------+-----------------+-------------+
