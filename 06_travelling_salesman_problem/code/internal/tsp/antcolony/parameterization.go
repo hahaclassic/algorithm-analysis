@@ -83,7 +83,7 @@ func (p *Parameterizer) ParameterizeAntColony(filename string, params *VariableI
 					Beta:        beta,
 					Evaporation: evaporation,
 					EliteAnts:   2,
-					Iterations:  100,
+					Iterations:  200,
 				})
 				deviation := p.calc(colony, graphs, bestTimes)
 

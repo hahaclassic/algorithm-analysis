@@ -43,11 +43,11 @@ func NewAntColony(settings *Settings) *Colony {
 	if settings == nil {
 		settings = &Settings{
 			Alpha:       0.9,
-			Beta:        0.3,
-			Evaporation: 0.3,
+			Beta:        0.9,
+			Evaporation: 0.1,
 			EliteAnts:   2,
 			q:           100,
-			Iterations:  100,
+			Iterations:  200,
 		}
 	}
 
